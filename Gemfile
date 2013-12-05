@@ -6,16 +6,26 @@ gem 'rails', '4.0.1'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 
-gem 'activeadmin', github: 'gregbell/active_admin'
+# gem 'activeadmin', github: 'gregbell/active_admin'
 
 # Only a very limited devise functionality is going to be used
 gem 'devise', github: 'plataformatec/devise'
 
 # CSS framework made with SASS
 gem 'bootstrap-sass'
+group :development do
+  gem 'rails_layout'
+end
+
+gem 'font-awesome-sass-rails'
+
+gem 'haml-rails', '~> 0.5.1'
 
 #Forms
 gem 'simple_form', '~> 3.0.0.beta1'
+
+# In-place editing
+gem 'bootstrap-editable-rails'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
@@ -54,3 +64,4 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
