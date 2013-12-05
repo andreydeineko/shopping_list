@@ -17,6 +17,8 @@ group :development do
   gem 'rails_layout'
 end
 
+gem 'erb2haml'
+
 gem 'font-awesome-sass-rails'
 
 gem 'haml-rails', '~> 0.5.1'

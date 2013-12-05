@@ -1,8 +1,8 @@
 .navbar.navbar-inverse#header
   .navbar-inner
-    = link_to t('.brand'), root_path .brand
+    = link_to 'Shopping list', root_path
 
-    .ul .nav
+    .ul.nav
 
     .ul.nav.pull-right
       - if user_signed_in?

@@ -1,0 +1,10 @@
+.container
+  #notifications.span3
+    - if flash[:notice].present?
+      .alert.alert-info
+        - button_to .close =data-dismiss="alert", t('common.x')
+        %h4= t('common.warning!')
+
+        -flash[:alert]
+
+        #alert-template.hidden.alert.notification

@@ -1,5 +1,10 @@
-/%= page_header
+%page_header
 
-
-%h1= 'Greetings for u'
-%p= @message
+  - if user_signed_in?
+    - t('requests', url: requests_path).html_safe
+  - else
+  #authenticated-options
+    %p Please either
+    = link_to t('auth.sign_in'), new_user_session_path
+    or
+    = link_to t('auth.sign_up'), new_user_registration_path
