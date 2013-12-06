@@ -1,17 +1,11 @@
-.navbar.navbar-inverse#header
+#header.navbar.navbar-inverse
   .navbar-inner
-    = link_to 'Shopping list', root_path
-
-    .ul.nav
-
-    .ul.nav.pull-right
+    = link_to t('.brand'), root_path, class: 'brand'
+    %ul.nav
+    %ul.nav.pull-right
       - if user_signed_in?
-        .li = link_to t('requests'), requests_path
-        .li = link_to t('auth.sign_out'), destroy_user_session_path method 'delete'
+        %li= link_to t('.application'), list_path
+        %li= link_to t('auth.sign_out'), destroy_user_session_path, method: 'delete'
       - else
-        .li = link_to t('auth.sign_in'), new_user_session_path
-        .li = link_to t('auth.sign_up'), new_user_registration_path
-
-
-
-
+        %li= link_to t('auth.sign_in'), new_user_session_path
+        %li= link_to t('auth.sign_up'), new_user_registration_path

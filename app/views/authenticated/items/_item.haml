@@ -1,0 +1,18 @@
+.item{:id => "item-#{item.id}"}
+  .item-header
+    %span.item-name{"data-name" => "name", "data-resource" => "item", "data-url" => item_path(item), :id => "item-#{item.id}"}
+      = item.name
+    .pull-right.item-options
+      %span.edit-item
+        = link_to '#', id: "edit-item-name-#{item.id}", class: 'edit-item-name' do
+          = icon_label 'icon-pencil'
+      %span.destroy-item
+        = link_to item, remote: true, method: 'delete', class: 'destroy-item', title: t('.destroy'), data: { confirm: t('common.are_you_sure?') } do
+          = icon_label 'icon-trash'
+  .item-body
+    .new-item-container
+      = icon_label 'icon-plus new-item-label'
+      = simple_form_for Item.new, remote: true, html: { id: "new-item-task-#{project.id}", class: 'new-item form-inline' } do |form|
+        = form.input :name, required: true, label: false, placeholder: t('authenticated.item.new.input_placeholder'), input_html: { class: 'span5' }
+        = form.input :project_id, type: :hidden, input_html: { value: project.id }
+        = form.submit t('common.submit'), class: 'btn btn-success', disabled: true, data: { disable_with: t('common.please_wait') }

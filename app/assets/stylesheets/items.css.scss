@@ -1,0 +1,36 @@
+// Place all the styles related to the items controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+body#authenticated-requests {
+  div.control-group.item { display: none };
+
+  div.new-item-container {
+    padding-bottom: 10px;
+    i {
+      cursor: pointer;
+      position: absolute;
+      margin: 6px 0 0 16px;
+
+      font-size: 30px;
+      color: $successText;
+    };
+
+    form.form-inline {
+      display: inline-block;
+      margin: 5px 0 5px 55px;
+    }
+
+    span.help-block {
+      position: absolute;
+    }
+
+    @include gradient-vertical($grayLighter, darken($grayLighter, 10%));
+  }
+
+  div.item-options {
+    display: none;
+    i { cursor: pointer; }
+    a { text-decoration: none; }
+  }
+
+}
