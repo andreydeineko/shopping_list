@@ -12,8 +12,12 @@ module ApplicationHelper
     html.html_safe
   end
 
+  def icon_label(classes, text = '')
+    "<i class='#{ classes }'></i> #{ text }".html_safe
+  end
+
   def page_header(text = nil, subtext = nil)
-    "<div class='page-header'> <h3> #{ text ? text : t('.header') } #{ subtext ? ('<small>' + subtext + '</small>') : ''} </h3> </div>".html_safe
+    "<div class='page-header'> <h3> #{ text ? text : t('application.header') } #{ subtext ? ('<small>' + subtext + '</small>') : ''} </h3> </div>".html_safe
   end
 
   def no_results(text = nil)

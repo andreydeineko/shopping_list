@@ -3,5 +3,5 @@ en:
     authenticated:
       projects:
         create:
-          notice: 'Item is succesfully written to list'
+          notice: 'Item is successfully written to list'
           alert: 'Failed to write item to list'

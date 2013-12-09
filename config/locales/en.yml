@@ -23,7 +23,7 @@ en:
   application:
     header:
       brand: 'Shopping list'
-      application: 'Home'
+      application: 'List of items'
 
   auth:
     sign_in: 'Sign in'
@@ -42,13 +42,10 @@ en:
     welcome:
       index:
         header: 'Welcome!'
-        welcome: Please visit <a class="important" href="%{url}">List</a> to post your request!'
+        greeting: Please visit <a class="important" href="%{url}">List of items</a> to post your request!'
 
 
     authenticated:
-      list:
-        index:
-          header: 'Shopping list'
       items:
         new:
           input_placeholder: 'Start typing here to add a item..'
