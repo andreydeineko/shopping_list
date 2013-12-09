@@ -5,11 +5,8 @@ Foodlist::Application.routes.draw do
   devise_for :users
 
   scope module: 'authenticated' do
-    resources :requests, only: [ :index, :create, :update, :destroy ]
-    resources :items, only: [ :create, :update ] do
+    resources :items, only: [:index, :show, :create, :update, :destroy ] do
       put :destroy,    :on => :collection
-      put :complete,   :on => :member
-      put :prioritize, :on => :member
     end
   end
   # The priority is based upon order of creation: first created -> highest priority.

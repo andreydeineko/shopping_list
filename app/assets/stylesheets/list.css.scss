@@ -1,0 +1,27 @@
+// Place all the styles related to the list controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body#list {
+  .editable-click {
+    border-bottom: none; /* Overrides unwanted x-editable styles */
+  }
+  a#new-list-toggler {
+    display: inline-block;
+
+    @extend .span2;
+  }
+
+  div.list {
+    @extend .span7;
+
+    float: none;
+    margin: 25px auto;
+
+    div.list-header {
+      @include gradient-vertical($infoText, darken($infoText, 10%));
+      padding: 15px 10px;
+      border: 1px solid $infoBorder;
+    }
+  }
+}

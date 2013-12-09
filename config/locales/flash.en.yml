@@ -1,0 +1,7 @@
+en:
+  flash:
+    authenticated:
+      projects:
+        create:
+          notice: 'Item is succesfully written to list'
+          alert: 'Failed to write item to list'

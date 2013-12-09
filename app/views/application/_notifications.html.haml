@@ -2,9 +2,16 @@
   #notifications.span3
     - if flash[:notice].present?
       .alert.alert-info
-        - button_to .close =data-dismiss="alert", t('common.x')
-        %h4= t('common.warning!')
-
-        -flash[:alert]
-
-        #alert-template.hidden.alert.notification
+        %button.close{"data-dismiss" => "alert", :type => "button"}
+          = t 'common.x'
+        %h4
+          = t 'common.heads_up!'
+        = flash[:notice]
+    - if flash[:alert].present?
+      .alert.alert-error
+        %button.close{"data-dismiss" => "alert", :type => "button"}
+          = t 'common.x'
+        %h4
+          = t 'common.warning!'
+        = flash[:alert]
+    #alert-template.hidden.alert.notification

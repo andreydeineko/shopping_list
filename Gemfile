@@ -13,15 +13,14 @@ gem 'devise', github: 'plataformatec/devise'
 
 # CSS framework made with SASS
 gem 'bootstrap-sass'
-group :development do
-  gem 'rails_layout'
-end
+# Replacement for bootstrap glyphs
+gem 'font-awesome-sass-rails'
 
 gem 'erb2haml'
 
-gem 'font-awesome-sass-rails'
-
 gem 'haml-rails', '~> 0.5.1'
+
+gem 'acts_as_list'
 
 #Forms
 gem 'simple_form', '~> 3.0.0.beta1'
@@ -44,11 +43,18 @@ gem 'coffee-rails', '~> 4.0.0'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 
+# Used for sortable lists
+gem 'jquery-ui-rails'
+
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
+
+# Pagination
+gem 'kaminari'
+
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.

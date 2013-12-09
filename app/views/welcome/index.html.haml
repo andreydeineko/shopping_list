@@ -1,10 +1,7 @@
-%page_header
-
-  - if user_signed_in?
-    - t('requests', url: requests_path).html_safe
-  - else
-  #authenticated-options
-    %p Please either
-    = link_to t('auth.sign_in'), new_user_session_path
-    or
-    = link_to t('auth.sign_up'), new_user_registration_path
+= page_header
+- if user_signed_in?
+  = t('.welcome', url: items_path).html_safe
+-else
+  #authentication-options
+    Please either #{link_to t('auth.sign_in'), new_user_session_path, class: 'important'} or
+    \#{link_to t('auth.sign_up'), new_user_registration_path, class: 'important'} to leave request
