@@ -44,7 +44,6 @@ en:
         header: 'Welcome!'
         greeting: Please visit <a class="important" href="%{url}">List of items</a> to post your request!'
 
-
     authenticated:
       items:
         new:

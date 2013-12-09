@@ -4,6 +4,9 @@ Foodlist::Application.routes.draw do
 
   devise_for :users
 
+  resources :list
+  #, only: [ :index ]
+
   scope module: 'authenticated' do
     resources :items, only: [:index, :show, :create, :update, :destroy ] do
       put :destroy,    :on => :collection

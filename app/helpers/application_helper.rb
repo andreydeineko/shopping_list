@@ -12,6 +12,7 @@ module ApplicationHelper
     html.html_safe
   end
 
+<<<<<<< HEAD
   def icon_label(classes, text = '')
     "<i class='#{ classes }'></i> #{ text }".html_safe
   end

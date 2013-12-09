@@ -3,5 +3,9 @@ en:
     authenticated:
       projects:
         create:
+<<<<<<< HEAD
           notice: 'Item is successfully written to list'
+=======
+          notice: 'Item is succesfully written to list'
+>>>>>>> 6c37f9050934652b7b792decad6aad3aaf1b207e
           alert: 'Failed to write item to list'

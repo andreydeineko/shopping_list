@@ -9,6 +9,11 @@
     = f.label :email
     %br/
     = f.email_field :email
+=======
+  %div
+    = f.label :email
+    %br/
+    = f.email_field :email, :autofocus => true
   %div
     = f.label :password
     %br/
@@ -19,3 +24,4 @@
     = f.password_field :password_confirmation
   %div= f.submit "Sign up", class: 'btn btn-success', data: { disable_with: t('common.please_wait') }
 = render "devise/shared/links"
+
