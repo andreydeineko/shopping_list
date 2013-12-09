@@ -1,7 +1,9 @@
-%h2 @item.name
+= page_header
+%h2
+= @item.name
 %strong Request date:
 = @item.created_at
 %br/
-%p= @item.comments
+/%p= @item.comments
 %hr/
 = link_to 'Back', {:action => 'index'}

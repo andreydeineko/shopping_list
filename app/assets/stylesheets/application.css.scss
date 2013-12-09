@@ -68,44 +68,36 @@
 @import 'common/variables';
 @import 'common/classes';
 
-
-@import 'welcome';
 @import "authenticated/items";
 // Application styles END
 
    #header {
-div.navbar-inner {
-@include border-radius(0);
-}
+    div.navbar-inner { @include border-radius(0); }
 
-margin-bottom: 0;
-}
+     margin-bottom: 0;
+    }
 
-div#main-content {
+    div#main-content {
     margin-top: 20px;
-}
+    }
 
 /* Notifications */
-div#notifications {
-    margin-top: 25px;
-    position: fixed;
-    left: 75%;
 
-h4 {
-    margin: 10px 0;
-}
+    div#notifications {
+      margin-top: 25px;
+      position: fixed;
+      left: 75%;
 
-div.notification {
-    font-size: 12px;
-    background: rgba(0, 0, 0, 0.6);
-    color: white;
-    text-shadow: none;
-}
-}
+      h4 { margin: 10px 0; }
+
+      div.notification {
+        font-size: 12px;
+        background: rgba(0, 0, 0, 0.6);
+        color: white;
+        text-shadow: none;
+      }
+    }
 /* Notifications END */
-
-
-/*@import "bootstrap-responsive"; */
 
 form.form-inline div.control-group { display: inline-block; }
 form.form-inline div.control-group div.controls { display: inline-block; }

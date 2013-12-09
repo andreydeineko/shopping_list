@@ -3,14 +3,9 @@
   = render @items
 .center
   = link_to nil, id: 'new-item-toggler', class: 'btn btn-danger' do
-<<<<<<< HEAD
     = icon_label 'icon-plus', t('.Add item')
-#new-item.well.span6
-  = simple_form_for Item.new, remote: true, html: { id: 'new-item', class: 'form-horizontal' } do |form|
-=======
-    = icon_label 'icon-plus', t('.new')
-#new-item.well.span6
+#new-item.well.span5
   = simple_form_for @item, remote: true, html: { id: 'new-item', class: 'form-horizontal' } do |form|
->>>>>>> 6c37f9050934652b7b792decad6aad3aaf1b207e
     = form.input :name, required: true
+    = form.input :url, required: false
     = form.submit t('common.submit'), class: 'btn btn-success', disabled: true, data: { disable_with: t('common.please_wait') }

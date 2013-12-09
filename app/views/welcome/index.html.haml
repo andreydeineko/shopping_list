@@ -1,6 +1,6 @@
 = page_header
 - if user_signed_in?
-  = t('.greeting', url: items_path)
+  = t('.greeting', url: items_path).html_safe
 -else
   #authentication-options
     Please either #{link_to t('auth.sign_in'), new_user_session_path, class: 'important'} or
