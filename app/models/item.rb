@@ -5,10 +5,7 @@ class Item < ActiveRecord::Base
   acts_as_list
 
   # Validations
-  validates :name, presence: true
-  with_options if: -> { name.present? } do
-    validates :name, uniqueness: { :scope => :project_id }
-  end
+  validates :name, presence: true, uniqueness: true
 
   scope :recent_first, -> { order('items.created_at DESC') }
 end
