@@ -21,6 +21,16 @@ $.api.authenticatedItems =
         event.preventDefault()
         elements.newItemContainer.slideToggle('fast')
 
+      createItem: (event, xhr, status) ->
+        response = $.parseJSON(xhr.responseText)
+
+        if ( status == 'success' )
+          elements.itemsContainer.prepend(response.entry)
+          elements.newItemContainer.slideToggle 'fast'
+          $(this).trigger('reset')
+        else
+          $.api.utils.assignErrorsFor('item', response.errors, $(this))
+
       resetItemForm: ->
         $this = $(this)
 
@@ -28,6 +38,7 @@ $.api.authenticatedItems =
         $this.find('.help-block, .help-inline').remove()
 
     liveCallbacks =
+
       destroyItem: ->
         $(this).parents('div.item').remove()
 
@@ -39,21 +50,29 @@ $.api.authenticatedItems =
         $("span#item-#{itemId}").editable('toggle')
 
 
-        # Bindings
 
-      container.on 'keyup', liveElements.itemNameInput, $.api.utils.toggleSubmit
-      container.on 'click', liveElements.plusSignLabel, ->
-        $(this).parents('div.new-item-container').find('form').find('input#item_name').focus()
+       # Bindings
 
-        # Create
-      container.on 'ajax:complete', liveElements.itemForm, (event, xhr, status) ->
-        response = $.parseJSON(xhr.responseText)
+    elements.newItemToggler.bind 'click', callbacks.toggleNewItemContainer
+    elements.newItemForm.
+      bind('ajax:complete',   callbacks.createItem).
+      bind('ajax:beforeSend', callbacks.resetItemForm)
 
-        if ( status == 'success' )
-          $this = $(this).trigger('reset')
-          $this.parents('div.item-body').find('div.items ul.shopping-list').prepend(response.entry)
-        else
-          $.api.utils.assignErrorsFor('item', response.errors, $(this))
+        # Validations
+    elements.newItemForm.
+      find('input#item_name').bind 'keyup', $.api.utils.toggleSubmit
 
-      container.on 'ajax:beforeSend', liveElements.itemForm, $.api.utils.resetForm
+       # Live bindings
+
+        # Destroy
+    elements.itemsContainer.on 'ajax:beforeSend', liveElements.destroyItem, -> $(this).addClass('disabled')
+    elements.itemsContainer.on 'ajax:complete', liveElements.destroyItem, liveCallbacks.destroyItem
+
+        # Edit
+    elements.itemsContainer.on 'click', liveElements.editItem, liveCallbacks.editItem
+    elements.on 'mouseover', 'li.item-item', ->
+      $(this).find('div.item-options').show()
+    elements.on 'mouseout', 'li.item-item', ->
+      $(this).find('div.item-options').hide()
+
 

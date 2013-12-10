@@ -39,6 +39,12 @@ body#authenticated-items {
         }
       }
     }
+    
+    li.item-item {
+      background: $grayLighter;
+      span.item-name { text-decoration: line-through; }
+    }
+
   div.new-item-container {
     padding-bottom: 10px;
     i {
