@@ -41,17 +41,18 @@ en:
 
   welcome:
     index:
-      header: 'Welcome!'
       greeting: 'Please visit <a class="important" href="%{url}">List of items</a> to post your request!'
 
   authenticated:
     items:
-      new:
-        input_placeholder: 'Start typing here to add an item..'
+      header: 'Before you make a request, check out, what your colleagues already ordered!'
       item:
         edit: 'Edit item'
         destroy: 'Delete item'
-
+        name:
+          input_placeholder: 'Item name goes here..'
+        url:
+          input_placeholder: 'Provide the url for your item if needed'
 
 
 

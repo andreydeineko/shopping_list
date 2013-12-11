@@ -1,5 +1,4 @@
 - if user_signed_in?
-  /= t('.welcome')
   = t('.greeting', url: items_path).html_safe
 -else
   #authentication-options
