@@ -70,9 +70,6 @@ $.api.authenticatedItems =
 
         # Edit
     elements.itemsContainer.on 'click', liveElements.editItem, liveCallbacks.editItem
-    elements.on 'mouseover', 'li.item-item', ->
-      $(this).find('div.item-options').show()
-    elements.on 'mouseout', 'li.item-item', ->
-      $(this).find('div.item-options').hide()
+
 
 

@@ -7,12 +7,12 @@
         = link_to '#', id: "edit-item-name-#{item.id}", class: 'edit-item-name' do
           = icon_label 'icon-pencil'
       %span.destroy-item
-        = link_to item, remote: true, method: 'delete', class: 'destroy-item', title: t('.destroy'), data: { confirm: t('common.are_you_sure?') } do
+        = link_to item, method: 'delete', class: 'destroy-item', title: t('.destroy'), data: { confirm: t('common.are_you_sure?') } do
           = icon_label 'icon-trash'
   .item-body
     .new-item-container
       = icon_label 'icon-plus new-item-label'
-      = simple_form_for @item, remote: true, html: { id: "new-item-#{item.id}", class: 'new-item form-inline' } do |form|
+      = simple_form_for @item, html: { id: "new-item-#{item.id}", class: 'new-item form-inline' } do |form|
         = form.input :name, required: true, label: false, placeholder: t('authenticated.item.new.input_placeholder'), input_html: { class: 'span3' }
         = form.input :url, required: false, label: false, placeholder: 'provide the url for your item if needed', input_html: {class: 'span3' }
         = form.submit t('common.submit'), class: 'btn btn-success', disabled: true, data: { disable_with: t('common.please_wait') }

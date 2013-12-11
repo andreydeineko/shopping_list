@@ -39,18 +39,18 @@ en:
 
   # Views
 
-    welcome:
-      index:
-        header: 'Welcome!'
-        greeting: Please visit <a class="important" href="%{url}">List of items</a> to post your request!'
+  welcome:
+    index:
+      header: 'Welcome!'
+      greeting: 'Please visit <a class="important" href="%{url}">List of items</a> to post your request!'
 
-    authenticated:
-      items:
-        new:
-          input_placeholder: 'Start typing here to add an item..'
-        item:
-          edit: 'Edit item'
-          destroy: 'Delete item'
+  authenticated:
+    items:
+      new:
+        input_placeholder: 'Start typing here to add an item..'
+      item:
+        edit: 'Edit item'
+        destroy: 'Delete item'
 
 
 

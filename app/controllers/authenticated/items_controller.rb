@@ -13,15 +13,12 @@ class Authenticated::ItemsController < Authenticated::BaseController
   end
 
   def create
-    @item = Item.create(items_params)
+    @item = Item.create(item_params)
     if @item.persisted?
-      render json: { entry: render_to_string(partial: 'item', locals: { item: @item }), message: I18n.t('flash.authenticated.items.create.notice') },
-             status: 202
+      redirect_to @item, notice: I18n.t('flash.authenticated.items.create.notice')
     else
-      render json: { errors: @item.errors }, status: 422
+      redirect_to @item, alert: I18n.t('flash.authenticated.items.create.alert')
     end
-
-    redirect_to :show
   end
 
   def update
