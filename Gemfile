@@ -1,23 +1,25 @@
 source 'https://rubygems.org'
 ruby '2.0.0'
-# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.1'
 
 # gem 'activeadmin', github: 'gregbell/active_admin'
 
-# Only a very limited devise functionality is going to be used
 gem 'devise', github: 'plataformatec/devise'
 
+gem 'bootstrap-sass-rails', '~> 2.3.0'
+
 # CSS framework made with SASS
-gem 'bootstrap-sass'
+gem 'bootstrap-sass', '~> 2.2.2'
+
+
+gem 'bootswatch-rails'
+
 # Replacement for bootstrap glyphs
 gem 'font-awesome-sass-rails'
 
 gem 'erb2haml'
 
 gem 'haml-rails', '~> 0.5.1'
-
-gem 'acts_as_list'
 
 #Forms
 gem 'simple_form', '~> 3.0.0.beta1'
@@ -26,7 +28,7 @@ gem 'simple_form', '~> 3.0.0.beta1'
 gem 'bootstrap-editable-rails'
 
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.0'
+ gem 'sass-rails', '~> 4.0.0'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
