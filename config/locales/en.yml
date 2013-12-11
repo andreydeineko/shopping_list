@@ -47,10 +47,10 @@ en:
     authenticated:
       items:
         new:
-          input_placeholder: 'Start typing here to add a item..'
+          input_placeholder: 'Start typing here to add an item..'
         item:
-          edit: 'Edit'
-          destroy: 'Delete request'
+          edit: 'Edit item'
+          destroy: 'Delete item'
 
 
 
