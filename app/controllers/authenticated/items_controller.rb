@@ -13,7 +13,7 @@ class Authenticated::ItemsController < Authenticated::BaseController
   end
 
   def create
-    @item = Item.create(item_params)
+    @item = current_user.items.create(item_params)
     if @item.persisted?
       redirect_to @item, notice: I18n.t('flash.authenticated.items.create.notice')
     else
@@ -22,7 +22,7 @@ class Authenticated::ItemsController < Authenticated::BaseController
   end
 
   def edit
-    @item =  Item.find(params[:id])
+    @item = Item.find(params[:id])
   end
 
   def update
@@ -34,8 +34,8 @@ class Authenticated::ItemsController < Authenticated::BaseController
   end
 
   def destroy
-    current_user.items.where(id: params[:item][:item_ids]).destroy_all
-    render nothing: true, status: 200
+    @item.destroy
+      flash[:alert] = "Item was deleted" and redirect_to "index"
   end
 
   private

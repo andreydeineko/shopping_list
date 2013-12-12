@@ -2,10 +2,7 @@
   #{link_to item.name, item_path(item)}
   /if current_user. has this comment
   .pull-right#item-options
-    %span.edit-item
-      = link_to '#', id: "edit-item-name-#{item.id}", class: 'edit-item-name', title: t('.edit') do
-        = link_to 'edit item', edit_item_path(item), {:action => 'edit'} #icon_label 'icon-pencil' method: 'post'
-    %span.destroy-item
-      = link_to item, method: 'delete', class: 'destroy-item', title: t('.destroy'), data: { confirm: t('common.are_you_sure?') } do
-        = icon_label 'icon-trash'
+    - if item.user_id == current_user.id
+      = link_to 'Edit item', edit_item_path(item), {:action => 'edit'} #icon_label 'icon-pencil' method: 'post'
+      = link_to 'Delete item', item_path(item), method: 'delete' #icon_label 'icon-trash'
   /form_for @comment
