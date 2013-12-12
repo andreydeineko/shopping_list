@@ -4,13 +4,10 @@ Foodlist::Application.routes.draw do
 
   devise_for :users
 
-  resources :list
-  #, only: [ :index ]
-
   scope module: 'authenticated' do
-    resources :items, only: [:index, :show, :create, :update, :destroy ] do
-      put :destroy,    :on => :collection
-    end
+    resources :items #, only: [:index, :create, :show, :edit, :update, :destroy ] #do
+      #put :destroy, :on => :member
+    #end
   end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

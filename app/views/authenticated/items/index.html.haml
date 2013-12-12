@@ -1,8 +1,10 @@
 .center
+/ icon_label 'icon-plus' and make add_item toggler
 #new-item.well.span5
   = simple_form_for @item, html: { id: 'new-item', class: 'form-horizontal' } do |form|
     = form.input :name, required: true, placeholder: t('authenticated.items.item.name.input_placeholder'), input_html: { class: 'span5' }
     = form.input :url, required: false, placeholder: t('authenticated.items.item.url.input_placeholder'), input_html: { class: 'span5' }
+    %br
     = form.submit t('common.submit'), class: 'btn btn-success', disabled: true, data: { disable_with: t('common.please_wait') }
 .center
   = t('authenticated.items.header')

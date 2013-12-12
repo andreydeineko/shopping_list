@@ -21,6 +21,10 @@ class Authenticated::ItemsController < Authenticated::BaseController
     end
   end
 
+  def edit
+    @item =  Item.find(params[:id])
+  end
+
   def update
     if @item.update(item_params)
       render json: @item, status: 202

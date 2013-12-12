@@ -45,10 +45,16 @@ en:
 
   authenticated:
     items:
+      add_item: 'Request item'
       header: 'Before you make a request, check out, what your colleagues already ordered!'
       item:
-        edit: 'Edit item'
+        edit: 'Save changes'
         destroy: 'Delete item'
+        name:
+          input_placeholder: 'Item name goes here..'
+        url:
+          input_placeholder: 'Provide the url for your item if needed'
+      edit:
         name:
           input_placeholder: 'Item name goes here..'
         url:
