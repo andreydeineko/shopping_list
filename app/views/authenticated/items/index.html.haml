@@ -1,11 +1,26 @@
 .center
-  = current_user.id
+  /= current_user.id
 / icon_label 'icon-plus' and make add_item toggler
 #new-item.well.span5
   = simple_form_for @item, html: { id: 'new-item', class: 'form-horizontal' } do |form|
     = form.input :name, required: true, placeholder: t('authenticated.items.item.name.input_placeholder'), input_html: { class: 'span5' }
     = form.input :url, required: false, placeholder: t('authenticated.items.item.url.input_placeholder'), input_html: { class: 'span5' }
     %br
+      Choose the bg color for your item on the list
+      %html
+        %head
+          %script{:src => "http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"}
+        %body
+          %select#color{:for => "item"}
+            %option{:style => "background-color: blue;", :value => "B"} Blue
+
+          :javascript
+            $('#color').change(function(){
+                    if($(this).val() == 'B'){
+                    $("div.new-item").css('background-color', 'blue');
+                  }
+                });
+      %br
     = form.submit t('common.submit'), class: 'btn btn-success', data: { disable_with: t('common.please_wait') }
 .center
   = t('authenticated.items.header')

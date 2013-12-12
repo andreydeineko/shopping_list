@@ -1,6 +1,10 @@
 %h2
-  %important
   = @item.name
+%br
+This item was requested by
+%strong
+  = current_user.email
+%br
 %br
   %strong Request date:
 = @item.created_at

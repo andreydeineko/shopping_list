@@ -27,7 +27,7 @@ class Authenticated::ItemsController < Authenticated::BaseController
 
   def update
     if @item.update(item_params)
-      render json: @item, status: 202
+      redirect_to items_path, notice: 'Item was updated'
     else
       render @item.errors.full_messages.join("<br /")
     end
@@ -35,13 +35,13 @@ class Authenticated::ItemsController < Authenticated::BaseController
 
   def destroy
     @item.destroy
-      flash[:alert] = "Item was deleted" and redirect_to "index"
+    redirect_to items_path, notice: 'Item was deleted'
   end
 
   private
 
   def item_params
-    params.require(:item).permit(:name)
+    params.require(:item).permit(:name, :url)
   end
 
   def find_item!
