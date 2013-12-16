@@ -23,91 +23,75 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="en.the_comments.yml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/locales/en.the_comments.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="4" selection-start="1022" selection-end="1033" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1065">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="the_comments.css.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/the_comments.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="64" column="47" selection-start="1181" selection-end="1181" vertical-scroll-proportion="-40.0" vertical-offset="0" max-vertical-offset="3810">
+            <state line="181" column="20" selection-start="3108" selection-end="3108" vertical-scroll-proportion="-31.333334" vertical-offset="1963" max-vertical-offset="3810">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="the_comments.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/initializers/the_comments.rb">
+      <file leaf-file-name="en.the_comments.yml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/locales/en.the_comments.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="33" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
+            <state line="35" column="37" selection-start="894" selection-end="894" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1065">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="comment.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/comment.rb">
+      <file leaf-file-name="items.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/authenticated/items.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="97" selection-start="666" selection-end="666" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="615">
+            <state line="13" column="24" selection-start="308" selection-end="308" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.haml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html.haml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/authenticated/items/index.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="6" selection-start="6" selection-end="6" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="600">
+            <state line="9" column="30" selection-start="216" selection-end="216" vertical-scroll-proportion="0.11499148" vertical-offset="0" max-vertical-offset="1174">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="items.css.scss" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="test.html.haml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/authenticated/items/test.html.haml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="39" selection-start="94" selection-end="202" vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="285">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="items.css.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/authenticated/items.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="24" selection-start="322" selection-end="322" vertical-scroll-proportion="0.2653749" vertical-offset="0" max-vertical-offset="1187">
+            <state line="6" column="14" selection-start="97" selection-end="97" vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="1245">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.html.haml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/authenticated/items/show.html.haml">
+      <file leaf-file-name="application.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="25" selection-start="373" selection-end="373" vertical-scroll-proportion="-11.25" vertical-offset="0" max-vertical-offset="480">
-              <folding />
+            <state line="19" column="31" selection-start="768" selection-end="768" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_form.html.haml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/the_comments/haml/_form.html.haml">
+      <file leaf-file-name="en.yml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/locales/en.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="50" selection-start="273" selection-end="273" vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="405">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_comment_edit.html.haml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/the_comments/haml/_comment_edit.html.haml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="9" selection-start="385" selection-end="385" vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="345">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html.haml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/the_comments/haml/index.html.haml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="351" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="255">
+            <state line="47" column="6" selection-start="1104" selection-end="1112" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1050">
               <folding />
             </state>
           </provider>
@@ -124,9 +108,7 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/config/routes.rb" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/api.js.coffee" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/authenticated/items.js.coffee" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/welcome.js.coffee" />
         <option value="$PROJECT_DIR$/app/views/authenticated/items/edit.html.haml" />
         <option value="$PROJECT_DIR$/app/controllers/authenticated/items_controller.rb" />
@@ -136,22 +118,28 @@
         <option value="$PROJECT_DIR$/config/locales/en.yml" />
         <option value="$PROJECT_DIR$/app/views/application/_header.haml" />
         <option value="$PROJECT_DIR$/app/views/the_comments/haml/_manage_controls.html.haml" />
-        <option value="$PROJECT_DIR$/app/views/the_comments/haml/_comment_edit.html.haml" />
-        <option value="$PROJECT_DIR$/app/views/authenticated/items/_item.haml" />
-        <option value="$PROJECT_DIR$/app/views/the_comments/haml/_form.html.haml" />
         <option value="$PROJECT_DIR$/app/views/the_comments/haml/my_comments.html.haml" />
         <option value="$PROJECT_DIR$/app/views/the_comments/haml/manage.html.haml" />
         <option value="$PROJECT_DIR$/config/initializers/the_comments.rb" />
-        <option value="$PROJECT_DIR$/config/locales/en.the_comments.yml" />
-        <option value="$PROJECT_DIR$/app/controllers/authenticated/comments_controller.rb" />
         <option value="$PROJECT_DIR$/db/schema.rb" />
         <option value="$PROJECT_DIR$/app/models/comment.rb" />
-        <option value="$PROJECT_DIR$/app/views/authenticated/items/index.html.haml" />
-        <option value="$PROJECT_DIR$/app/views/the_comments/haml/_comment_body.html.haml" />
         <option value="$PROJECT_DIR$/app/views/the_comments/haml/index.html.haml" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/the_comments.css.scss" />
         <option value="$PROJECT_DIR$/app/views/authenticated/items/show.html.haml" />
+        <option value="$PROJECT_DIR$/app/views/authenticated/items/_item.haml" />
+        <option value="$PROJECT_DIR$/app/views/the_comments/haml/_comment_body.html.haml" />
+        <option value="$PROJECT_DIR$/app/views/the_comments/haml/_comment_edit.html.haml" />
+        <option value="$PROJECT_DIR$/app/views/the_comments/haml/_form.html.haml" />
+        <option value="$PROJECT_DIR$/app/controllers/authenticated/comments_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/the_comments/haml/_additional_info.html.haml" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/the_comments.css.scss" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/the_comments.js.coffee" />
+        <option value="$PROJECT_DIR$/config/locales/en.the_comments.yml" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/authenticated/items.js.coffee" />
+        <option value="$PROJECT_DIR$/app/views/authenticated/items/test.html.haml" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/authenticated/items.css.scss" />
+        <option value="$PROJECT_DIR$/app/views/authenticated/items/index.html.haml" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/authenticated/items.js" />
       </list>
     </option>
   </component>
@@ -560,6 +548,54 @@
               <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javascripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="foodlist" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shopping_list" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javascripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="authenticated" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="foodlist" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shopping_list" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -805,27 +841,15 @@
     </option>
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/api.js.coffee">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1234">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/authenticated/items.js.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1211" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="0" selection-start="713" selection-end="713" vertical-scroll-proportion="0.23095624" vertical-offset="0" max-vertical-offset="1234">
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -853,13 +877,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/authenticated/items_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="17" selection-start="1037" selection-end="1037" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="855">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20131216095415_add_name_to_users.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1211">
@@ -877,13 +894,6 @@
     <entry file="file://$PROJECT_DIR$/app/models/user.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="0" selection-start="282" selection-end="282" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/locales/en.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="24" selection-start="978" selection-end="978" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1050">
           <folding />
         </state>
       </provider>
@@ -937,30 +947,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/the_comments/haml/_additional_info.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1234">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/authenticated/items/edit.html.haml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="127" selection-start="555" selection-end="555" vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="210">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/the_comments/_tree.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1211">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/the_comments/haml/_comment.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1211">
           <folding />
         </state>
       </provider>
@@ -975,13 +964,6 @@
     <entry file="file://$PROJECT_DIR$/app/views/the_comments/haml/_tree.html.haml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="34" selection-start="234" selection-end="234" vertical-scroll-proportion="0.0379107" vertical-offset="0" max-vertical-offset="1187">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/the_comments/haml/_sidebar.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="64" selection-start="1643" selection-end="1643" vertical-scroll-proportion="0.3411963" vertical-offset="0" max-vertical-offset="1187">
           <folding />
         </state>
       </provider>
@@ -1014,20 +996,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/authenticated/comments_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="3" selection-start="1465" selection-end="1465" vertical-scroll-proportion="0.5202312" vertical-offset="0" max-vertical-offset="1211">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/authenticated/items/_item.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="255">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/comment.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="97" selection-start="666" selection-end="666" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="615">
@@ -1042,37 +1010,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/authenticated/items/index.html.haml">
+    <entry file="file://$PROJECT_DIR$/app/views/authenticated/items/_item.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="6" selection-start="6" selection-end="6" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1174">
+        <state line="2" column="26" selection-start="96" selection-end="96" vertical-scroll-proportion="0.024793388" vertical-offset="0" max-vertical-offset="1210">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/locales/en.the_comments.yml">
+    <entry file="file://$PROJECT_DIR$/app/views/the_comments/haml/_sidebar.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="4" selection-start="1022" selection-end="1033" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1065">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/the_comments/haml/_form.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="50" selection-start="273" selection-end="273" vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="405">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/the_comments/haml/_comment_body.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="27" selection-start="85" selection-end="85" vertical-scroll-proportion="0.0252738" vertical-offset="0" max-vertical-offset="1187">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/the_comments/haml/_comment_edit.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="9" selection-start="385" selection-end="385" vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="345">
+        <state line="27" column="64" selection-start="1643" selection-end="1643" vertical-scroll-proportion="0.3411963" vertical-offset="0" max-vertical-offset="1187">
           <folding />
         </state>
       </provider>
@@ -1084,13 +1031,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/the_comments.css.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="47" selection-start="1181" selection-end="1181" vertical-scroll-proportion="-40.0" vertical-offset="0" max-vertical-offset="3810">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/authenticated/items/show.html.haml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="25" selection-start="373" selection-end="373" vertical-scroll-proportion="-11.25" vertical-offset="0" max-vertical-offset="480">
@@ -1098,9 +1038,123 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/authenticated/items_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="4" selection-start="951" selection-end="1001" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="855">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/the_comments/haml/_comment_edit.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="5" selection-start="609" selection-end="609" vertical-scroll-proportion="-10.625" vertical-offset="0" max-vertical-offset="345">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/the_comments/haml/_additional_info.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="33" selection-start="219" selection-end="219" vertical-scroll-proportion="0.1137321" vertical-offset="0" max-vertical-offset="1187">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/the_comments/haml/_form.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="57" selection-start="724" selection-end="724" vertical-scroll-proportion="-12.5" vertical-offset="0" max-vertical-offset="405">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/authenticated/comments_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="61" selection-start="1523" selection-end="1523" vertical-scroll-proportion="0.5105348" vertical-offset="0" max-vertical-offset="1234">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/the_comments/haml/_comment_body.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="27" selection-start="85" selection-end="85" vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="225">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/the_comments/haml/_comment.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1211">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/the_comments.js.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="14" selection-start="1254" selection-end="1254" vertical-scroll-proportion="0.4954583" vertical-offset="0" max-vertical-offset="1680">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/the_comments_manage.js.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="818">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/the_comments.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="181" column="20" selection-start="3108" selection-end="3108" vertical-scroll-proportion="-31.333334" vertical-offset="1963" max-vertical-offset="3810">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/locales/en.the_comments.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="37" selection-start="894" selection-end="894" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1065">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/locales/en.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="6" selection-start="1104" selection-end="1112" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1050">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/authenticated/items/test.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="39" selection-start="94" selection-end="202" vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="285">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/authenticated/items.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="24" selection-start="322" selection-end="322" vertical-scroll-proportion="0.2653749" vertical-offset="0" max-vertical-offset="1187">
+        <state line="6" column="14" selection-start="97" selection-end="97" vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="1245">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="31" selection-start="768" selection-end="768" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/authenticated/items.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="24" selection-start="308" selection-end="308" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/authenticated/items/index.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="30" selection-start="216" selection-end="216" vertical-scroll-proportion="0.11499148" vertical-offset="0" max-vertical-offset="1174">
           <folding />
         </state>
       </provider>

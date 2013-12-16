@@ -86,7 +86,7 @@ $ ->
   $(document).on 'click', '.reply_link', ->
     link    = $ @
     comment = link.parent().parent().parent()
-  
+
     $(comment_forms).hide()
     form = $('#new_comment').clone().removeAttr('id').addClass('reply_comments_form')
 

@@ -160,7 +160,7 @@
       border-radius: 3px;
       padding: 5px;
     }
-    &.highlighted{ border: 1px dashed #ff6633 !important; }
+    &.highlighted{ border: 2px dashed red !important; }
 
   }
 
@@ -171,15 +171,15 @@
 
 .new_comment{
   .btn{
-    padding: 7px;
-    margin-top: 5px;
+    padding: 5px;
+    margin-top: 3px;
     cursor: pointer;
   }
 }
 
 .comments_list{
   li{
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 
     .item{
       border: 1px solid gray;

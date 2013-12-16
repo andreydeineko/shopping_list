@@ -1,5 +1,9 @@
 body#authenticated-items {
 
+  #a-items-container {
+    display: inline-block;
+  }
+
   div#new-item {
     float: none;
     margin: 25px auto;
@@ -64,5 +68,11 @@ body#authenticated-items {
         background: #bada55;
       }
     }
+  }
+  a.fill-div {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
   }
 }

@@ -1,7 +1,14 @@
 #auth-info
   You are logged in as
   = current_user.email
-/ icon_label 'icon-plus' and make add_item toggler
+  %p
+.center
+  = link_to nil, id: 'items-container', class: 'btn btn-danger' do
+    = t('authenticated.items.header')
+%p
+.center
+  = link_to nil, id: 'new-item', class: 'btn btn-danger' do
+    = icon_label 'icon-plus', t('.add_item')
 #new-item.well.span5
   = simple_form_for @item, html: { id: 'new-item', class: 'form-horizontal' } do |form|
     = form.input :name, required: true, placeholder: t('authenticated.items.item.name.input_placeholder'), input_html: { class: 'span5' }
@@ -9,26 +16,8 @@
     %br
       Choose the bg color for your item on the list
       = select_tag "category", options_for_select([ "food", "office", "bathroom", "other" ])
-    %br
-      /--------
-      %html
-        %head
-          %script{:src => "http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"}
-        %body
-          %select#color{:for => "item"}
-            %option{:style => "background-color: blue;", :value => "B"} Blue
-
-          :javascript
-            $('#color').change(function(){
-                    if($(this).val() == 'B'){
-                    $("div.new-item").css('background-color', 'blue');
-                  }
-                });
-      /-----------
       %br
     = form.submit t('common.submit'), class: 'btn btn-success', data: { disable_with: t('common.please_wait') }
-.center
-  = t('authenticated.items.header')
-  /#{link_to t('authenticated.items.header'), on(click) render @items class: 'important'}
+
 #items
   = render @items
