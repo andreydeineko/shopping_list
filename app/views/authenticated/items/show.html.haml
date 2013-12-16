@@ -1,15 +1,27 @@
-%h2
-  = @item.name
-%br
-This item was requested by
-%strong
+#auth-info
+  You are logged in as
   = current_user.email
-%br
-%br
-  %strong Request date:
-= @item.created_at
-%br
-= @item.url
-/%p= @item.comments
+#item-name
+  %h2
+    = @item.name
+#request-info
+  This item was requested by
+  = current_user.email
+  %br
+  Request date:
+  = @item.created_at #t.strftime("#{t.day.ordinalize} %B, %Y %I:%M %p")
+  %br
+  = @item.url
 %hr
-= link_to 'Back to list of items', {:action => 'index'}
+  - if @item.comments.count > 0
+    There are
+    = @item.comments.count
+    comments to this item
+  - else
+    There are no comments yet.
+%hr
+= render partial: 'the_comments/tree', locals: { commentable: @item, comments_tree: @comments }
+.center
+  %hr
+  = link_to 'Back to list of items', {:action => 'index'} # {style: "width: 100px;"}
+  %hr

@@ -9,6 +9,7 @@ class Authenticated::ItemsController < Authenticated::BaseController
 
   def show
     @item = Item.find(params[:id])
+    @comments = @item.comments.with_state([:draft, :published])
     #flash[:error] = "Item's not found" and return unless @item
   end
 

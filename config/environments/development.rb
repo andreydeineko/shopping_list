@@ -29,4 +29,7 @@ Foodlist::Application.configure do
 
   #devise setup
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+
+  # due to make Circular dependency detected while autoloading constant Authenticated::CommentsController working
+  #config.middleware.delete Rack::Lock
 end

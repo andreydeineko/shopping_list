@@ -16,4 +16,4 @@
 //= require jquery.ui.all
 //= require bootstrap
 //= require_tree .
-
+//= require the_comments

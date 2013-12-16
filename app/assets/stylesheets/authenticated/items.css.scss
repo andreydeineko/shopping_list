@@ -1,5 +1,4 @@
 body#authenticated-items {
-  div.control-group.item { display: none };
 
   div#new-item {
     float: none;
@@ -7,30 +6,63 @@ body#authenticated-items {
   }
 
   div.item {
-    @extend .span7;
-
     float: none;
     margin: 25px auto;
+  }
 
-      span.item-name {
-        color: white;
-        font-size: 22px;
-        margin-left: 10px;
+  #item-name {
+    color: limegreen;
+  }
+
+  #auth-info {
+    text-align: center;
+    color: deepskyblue;
+    font-size: 17px;
+    font-style: italic;
+    font-family: Georgia;
+  }
+
+  #request-info {
+    color: lightskyblue;
+  }
+
+  #items {
+    .item {
+      border-top: 1px solid #eee;
+      padding: 0;
+      margin: 0;
+
+      &:hover {
+        background: deepskyblue;
+        cursor: pointer;
       }
 
-      div.item-options {
-        span.destroy-item {
-          border-left: 1px solid cadetBlue;
-          padding-left: 10px;
-          margin-left: 5px;
-        }
-        a {
-          color: white;
-          font-size: 18px;
-          &:hover {
-            text-decoration: none;
-          }
-        }
+      &:before {
+        content: "";
+        display: inline-block;
+        width: 0.5em;
+        height: 1.75em;
+        line-height: 1;
+        vertical-align: -0.5em;
+        margin-right: 0.5em;
+        background: #000;
+      }
+
+      &.food:before {
+        background: lightgreen;
+      }
+
+      &.office:before {
+        background: red;
+      }
+
+      &.other:before {
+        background: orange;
+      }
+
+      &.bathroom:before {
+        background: #bada55;
       }
     }
+  }
 }

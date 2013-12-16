@@ -1,5 +1,4 @@
 Foodlist::Application.routes.draw do
-
   root to: "welcome#index"
 
   devise_for :users
@@ -8,6 +7,8 @@ Foodlist::Application.routes.draw do
     resources :items #, only: [:index, :create, :show, :edit, :update, :destroy ] #do
       #put :destroy, :on => :member
     #end
+  concern   :user_comments,  TheComments::UserRoutes.new
+  resources :comments, concerns:  [:user_comments]
   end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

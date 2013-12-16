@@ -41,7 +41,7 @@ en:
 
   welcome:
     index:
-      greeting: 'Please visit <a class="important" href="%{url}">List of items</a> to post your request!'
+      greeting: 'Welcome! Please visit <a class="important" href="%{url}">List of items</a> to post your request!'
 
   authenticated:
     items:

@@ -68,6 +68,9 @@ group :production do
   gem 'rails_12factor', '0.0.2'
 end
 
+gem "the_comments", "~> 2.2.0"
+gem 'awesome_nested_set'
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
