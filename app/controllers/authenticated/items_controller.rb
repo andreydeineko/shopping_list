@@ -45,13 +45,13 @@ class Authenticated::ItemsController < Authenticated::BaseController
   def like
     @item = Item.find(params[:id])
     @item.liked_by current_user
-    redirect_to @item
+    redirect_to items_path
   end
 
   def dislike
     @item = Item.find(params[:id])
     @item.disliked_by current_user
-    redirect_to @item
+    redirect_to items_path
   end
 
   private

@@ -5,21 +5,23 @@
 .center
   = link_to nil, id: 'items-container', class: 'btn btn-danger' do
     = t('authenticated.items.header')
+#items
+  = render @items, remote: true, html: { id: 'items' }
 %p
 .center
-  = link_to nil, id: 'new-item', class: 'btn btn-danger' do
+  = link_to nil, id: 'new-item-container', class: 'btn btn-danger' do
     = icon_label 'icon-plus', t('authenticated.items.add_item')
 #new-item.well.span5
   = simple_form_for @item, html: { id: 'new-item', class: 'form-horizontal' } do |form|
-    = form.input :name, required: true, placeholder: t('authenticated.items.item.name.input_placeholder'), input_html: { class: 'span5' }
-    = form.input :url, required: false, placeholder: t('authenticated.items.item.url.input_placeholder'), input_html: { class: 'span5' }
+    = form.input :name, required: true, remote: true, placeholder: t('authenticated.items.item.name.input_placeholder'), input_html: { class: 'span5' }
+    = form.input :url, required: false, remote: true, placeholder: t('authenticated.items.item.url.input_placeholder'), input_html: { class: 'span5' }
     %br
     #items.item
-      Choose the category
-      = select_tag "category", options_for_select([ "food", "office", "bathroom", "other" ])
-      %br
-    Choose the amount
-    = form.submit t('common.submit'), class: 'btn btn-success', data: { disable_with: t('common.please_wait') }
+      .center
+        Choose the category
+        = select_tag "category", options_for_select([ "food", "office", "bathroom", "other" ])
+      /%br
+    /Choose the amount
+    /= form.input :amount, required: true, t('authenticated.items.item.amount.input_placeholder'), input_html: { class: 'span3' }
+    = form.submit t('common.submit'), class: 'btn btn-success', remote: true, data: { disable_with: t('common.please_wait') }
 
-#items
-  = render @items

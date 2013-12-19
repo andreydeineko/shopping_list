@@ -1,8 +1,19 @@
 #auth-info
   You are logged in as
-  = current_user.email
+  = current_user.name
 #item-name
   = @item.name
+  /.pull-right#item-options
+  /  = @item.likes.size
+  /  = link_to like_item_path(item), method: :put do
+  /    %icon.icon-thumbs-up
+  /  = @item.dislikes.size
+  /  = link_to dislike_item_path(item), method: :put do
+  /    %icon.icon-thumbs-down
+  /  = link_to edit_item_path(item), { :action => 'edit' } do
+  /    %icon.icon-pencil
+  /  = link_to item_path(item), method: 'delete' do
+  /    %icon.icon-trash
 #request-info
   This item was requested by
   = current_user.email
@@ -24,5 +35,5 @@
 = render partial: 'the_comments/tree', locals: { commentable: @item, comments_tree: @comments }
 .center
   %hr
-  = link_to 'Back to list of items', {:action => 'index'} # {style: "width: 100px;"}
+  = link_to 'Back to list of items', {:action => 'index'}
   %hr

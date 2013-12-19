@@ -41,7 +41,7 @@ en:
 
   welcome:
     index:
-      greeting: 'Welcome! Please visit <a class="important" href="%{url}">List of items</a> to post your request!'
+      greeting: "Welcome #{current_user.name}! Please visit <a class='important' href='%{url}'>List of items</a> to post your request!"
 
   authenticated:
     items:
@@ -51,9 +51,9 @@ en:
         edit: 'Save changes'
         destroy: 'Delete item'
         name:
-          input_placeholder: 'Item name goes here..'
+          input_placeholder: 'bread'
         url:
-          input_placeholder: 'Provide the url for your item if needed'
+          input_placeholder: 'www.bread.com'
       edit:
         name:
           input_placeholder: 'Item name goes here..'

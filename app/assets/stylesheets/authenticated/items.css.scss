@@ -1,13 +1,21 @@
 body#authenticated-items {
   font-family: Georgia;
 
-  #a-items-container {
+  a#items-container {
     display: inline-block;
+    cursor: pointer;
+    margin-top: 30px;
   }
 
+  a#new-item-container {
+    float: none;
+    margin: 25px auto;
+    cursor: pointer;
+  }
   #new-item {
     float: none;
     margin: 25px auto;
+    background: #e0e4f5;
   }
 
   div.item {
@@ -28,21 +36,30 @@ body#authenticated-items {
     font-size: 15px;
     font-style: italic;
     margin-top: 20px;
+    /*background: #e0e4f5;
+    border: 1px solid #c6cff5;
+    border-radius: 5px;
+    padding: 5px; */
   }
 
   #request-info {
-    color: lightskyblue;
+    color: darkgreen;
     margin-top: 37px;
+    background: #e0e4f5;
+    border: 1px solid #c6cff5;
+    border-radius: 5px;
+    padding: 10px;
   }
 
   #items {
+    padding-top: 5px;
     .item {
       border-top: 1px solid #eee;
       padding: 0;
       margin: 0;
 
       &:hover {
-        background: deepskyblue;
+        background: #e0e4f5;
         cursor: pointer;
       }
 

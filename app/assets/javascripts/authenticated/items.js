@@ -1,18 +1,17 @@
-var callbacks, elements;
 
-elements = {
-    itemsContainer: $('#a-items-container'),
-    newItemToggler: $('div#new-item')
-};
+$('#items').hide();
+$('a#items-container').click(function(){
+    $('#items').slideToggle('fast', function(){
+    });
+    event.preventDefault();
+    event.stopPropagation();
+});
 
-callbacks = {
-    toggleItemsContainer: function(event) {
-        event.preventDefault();
-        return elements.itemsContainer.slideToggle('fast');
-    },
 
-    toggleNewItemToggler: function(event) {
-        event.preventDefault();
-        return elements.newItemToggler.slideToggle('fast');
-    }
-};
+$('#new-item').hide();
+$('a#new-item-container').click(function(){
+    $('#new-item').slideToggle('fast', function(){
+    });
+    event.preventDefault();
+    event.stopPropagation();
+});
