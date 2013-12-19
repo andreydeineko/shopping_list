@@ -4,9 +4,13 @@ Foodlist::Application.routes.draw do
   devise_for :users
 
   scope module: 'authenticated' do
-    resources :items #, only: [:index, :create, :show, :edit, :update, :destroy ] #do
-      #put :destroy, :on => :member
-    #end
+    resources :items do
+      member do
+        put "like", to: "items#like"
+        put "dislike", to: "items#dislike"
+      end
+    end
+
   concern   :user_comments,  TheComments::UserRoutes.new
   resources :comments, concerns:  [:user_comments]
   end

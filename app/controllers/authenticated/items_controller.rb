@@ -9,6 +9,7 @@ class Authenticated::ItemsController < Authenticated::BaseController
 
   def show
     @item = Item.find(params[:id])
+    # Comments
     @comments = @item.comments.with_state([:draft, :published])
     #flash[:error] = "Item's not found" and return unless @item
   end
@@ -37,6 +38,20 @@ class Authenticated::ItemsController < Authenticated::BaseController
   def destroy
     @item.destroy
     redirect_to items_path, notice: 'Item was deleted'
+  end
+
+  # Voting
+
+  def like
+    @item = Item.find(params[:id])
+    @item.liked_by current_user
+    redirect_to @item
+  end
+
+  def dislike
+    @item = Item.find(params[:id])
+    @item.disliked_by current_user
+    redirect_to @item
   end
 
   private

@@ -68,8 +68,12 @@ group :production do
   gem 'rails_12factor', '0.0.2'
 end
 
+#Comments
 gem "the_comments", "~> 2.2.0"
 gem 'awesome_nested_set'
+
+#Voting
+gem 'acts_as_votable', '~> 0.8.0'
 
 
 # Use ActiveModel has_secure_password

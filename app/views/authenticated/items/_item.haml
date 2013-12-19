@@ -1,6 +1,10 @@
-.item{:id => "item-#{item.id}"}
+.item{:id => 'item-#{item.id}'}
   =link_to item.name, item_path(item)
   .pull-right#item-options
+    = @item.likes.size
+    = link_to 'Like', like_item_path(item), method: :put
+    = @item.dislikes.size
+    = link_to 'Dislike', dislike_item_path(item), method: :put
     - if item.user_id == current_user.id
       = link_to 'Edit item', edit_item_path(item), { :action => 'edit' } #icon_label 'icon-pencil' method: 'post'
       = link_to 'Delete item', item_path(item), method: 'delete' #, confirm: t('common.are_you_sure?') #icon_label 'icon-trash'
