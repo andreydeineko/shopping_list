@@ -2,8 +2,7 @@
   You are logged in as
   = current_user.email
 #item-name
-  %h2
-    = @item.name
+  = @item.name
 #request-info
   This item was requested by
   = current_user.email
@@ -13,7 +12,9 @@
   %br
   = @item.url
 %hr
-  - if @item.comments.count > 0
+  - if @item.comments.count == 1
+    There is 1 comment to this item
+  - elsif @item.comments.count > 0
     There are
     = @item.comments.count
     comments to this item

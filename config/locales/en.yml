@@ -45,7 +45,7 @@ en:
 
   authenticated:
     items:
-      add_item: 'Request item'
+      add_item: 'Request new item'
       header: 'Before you make a request, check out, what your colleagues already ordered!'
       item:
         edit: 'Save changes'

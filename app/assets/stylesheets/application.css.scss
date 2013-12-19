@@ -15,12 +15,12 @@
 
 */
 
-@import "bootswatch/amelia/variables";
+@import "bootswatch/cerulean/variables";
 
 @import "bootstrap";
 
 //@import "bootstrap-responsive";
-@import "bootswatch/amelia/bootswatch";
+@import "bootswatch/cerulean/bootswatch";
 
 // Application styles
 @import 'font-awesome';
@@ -33,8 +33,6 @@
 
 // Application styles END
 
-
-
    #header {
     div.navbar-inner { @include border-radius(0); }
 
@@ -42,12 +40,14 @@
     }
 
     div#main-content {
-    margin-top: 20px;
+    margin-top: 50px;
+    font-family: Georgia;
     }
 
 /* Notifications */
 
     div#notifications {
+      font-family: Georgia;
       margin-top: 25px;
       position: fixed;
       left: 75%;

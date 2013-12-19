@@ -1,10 +1,11 @@
 body#authenticated-items {
+  font-family: Georgia;
 
   #a-items-container {
     display: inline-block;
   }
 
-  div#new-item {
+  #new-item {
     float: none;
     margin: 25px auto;
   }
@@ -15,19 +16,23 @@ body#authenticated-items {
   }
 
   #item-name {
-    color: limegreen;
+    margin-top: 30px;
+    color: red;
+    font-size: 29px;
+    font-weight: bold;
   }
 
   #auth-info {
     text-align: center;
     color: deepskyblue;
-    font-size: 17px;
+    font-size: 15px;
     font-style: italic;
-    font-family: Georgia;
+    margin-top: 20px;
   }
 
   #request-info {
     color: lightskyblue;
+    margin-top: 37px;
   }
 
   #items {

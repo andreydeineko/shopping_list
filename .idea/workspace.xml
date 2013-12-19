@@ -23,46 +23,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="en.yml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/locales/en.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="47" column="28" selection-start="1126" selection-end="1126" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1050">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="the_comments.css.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/the_comments.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="181" column="20" selection-start="3108" selection-end="3108" vertical-scroll-proportion="-31.333334" vertical-offset="1963" max-vertical-offset="3810">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="en.the_comments.yml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/locales/en.the_comments.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="37" selection-start="894" selection-end="894" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1065">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="items.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/authenticated/items.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="24" selection-start="308" selection-end="308" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html.haml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/authenticated/items/index.html.haml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="30" selection-start="216" selection-end="216" vertical-scroll-proportion="0.11499148" vertical-offset="0" max-vertical-offset="1174">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test.html.haml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/authenticated/items/test.html.haml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="39" selection-start="94" selection-end="202" vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="285">
+            <state line="64" column="26" selection-start="1139" selection-end="1139" vertical-scroll-proportion="-40.0" vertical-offset="0" max-vertical-offset="3810">
               <folding />
             </state>
           </provider>
@@ -71,27 +44,34 @@
       <file leaf-file-name="items.css.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/authenticated/items.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="14" selection-start="97" selection-end="97" vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="1245">
+            <state line="74" column="5" selection-start="1191" selection-end="1191" vertical-scroll-proportion="-42.291668" vertical-offset="95" max-vertical-offset="1320">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
+      <file leaf-file-name="application.css.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="31" selection-start="768" selection-end="768" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+            <state line="25" column="23" selection-start="796" selection-end="796" vertical-scroll-proportion="-15.625" vertical-offset="0" max-vertical-offset="1095">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="en.yml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/locales/en.yml">
+      <file leaf-file-name="show.html.haml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/authenticated/items/show.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="6" selection-start="1104" selection-end="1112" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1050">
+            <state line="4" column="14" selection-start="82" selection-end="82" vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="495">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html.haml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/authenticated/items/index.html.haml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="21" selection-start="868" selection-end="868" vertical-scroll-proportion="0.25062656" vertical-offset="0" max-vertical-offset="1197">
               <folding />
             </state>
           </provider>
@@ -115,7 +95,6 @@
         <option value="$PROJECT_DIR$/app/views/devise/registrations/edit.html.haml" />
         <option value="$PROJECT_DIR$/app/models/user.rb" />
         <option value="$PROJECT_DIR$/app/views/devise/registrations/new.html.haml" />
-        <option value="$PROJECT_DIR$/config/locales/en.yml" />
         <option value="$PROJECT_DIR$/app/views/application/_header.haml" />
         <option value="$PROJECT_DIR$/app/views/the_comments/haml/_manage_controls.html.haml" />
         <option value="$PROJECT_DIR$/app/views/the_comments/haml/my_comments.html.haml" />
@@ -124,22 +103,24 @@
         <option value="$PROJECT_DIR$/db/schema.rb" />
         <option value="$PROJECT_DIR$/app/models/comment.rb" />
         <option value="$PROJECT_DIR$/app/views/the_comments/haml/index.html.haml" />
-        <option value="$PROJECT_DIR$/app/views/authenticated/items/show.html.haml" />
-        <option value="$PROJECT_DIR$/app/views/authenticated/items/_item.haml" />
         <option value="$PROJECT_DIR$/app/views/the_comments/haml/_comment_body.html.haml" />
         <option value="$PROJECT_DIR$/app/views/the_comments/haml/_comment_edit.html.haml" />
         <option value="$PROJECT_DIR$/app/views/the_comments/haml/_form.html.haml" />
         <option value="$PROJECT_DIR$/app/controllers/authenticated/comments_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/the_comments/haml/_additional_info.html.haml" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/the_comments.css.scss" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/the_comments.js.coffee" />
         <option value="$PROJECT_DIR$/config/locales/en.the_comments.yml" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/authenticated/items.js.coffee" />
         <option value="$PROJECT_DIR$/app/views/authenticated/items/test.html.haml" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/authenticated/items.css.scss" />
-        <option value="$PROJECT_DIR$/app/views/authenticated/items/index.html.haml" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/authenticated/items.js" />
+        <option value="$PROJECT_DIR$/config/locales/en.yml" />
+        <option value="$PROJECT_DIR$/app/views/authenticated/items/show.html.haml" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/the_comments.css.scss" />
+        <option value="$PROJECT_DIR$/app/views/authenticated/items/_item.haml" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/authenticated/items.css.scss" />
+        <option value="$PROJECT_DIR$/app/views/authenticated/items/index.html.haml" />
       </list>
     </option>
   </component>
@@ -175,6 +156,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="RailsProjectView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -548,59 +531,9 @@
               <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javascripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="foodlist" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shopping_list" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javascripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="authenticated" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="foodlist" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shopping_list" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="RailsProjectView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -788,44 +721,24 @@
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296355" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23955224" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24328358" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296355" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296355" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23955224" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USERS">
@@ -848,9 +761,7 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/api.js.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1234">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1234" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/welcome.js.coffee">
@@ -865,128 +776,87 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/item.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1234">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1234" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="35" selection-start="242" selection-end="242" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1095">
-          <folding />
-        </state>
+        <state line="7" column="35" selection-start="242" selection-end="242" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1095" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20131216095415_add_name_to_users.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1211">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1211" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1234">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1234" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/user.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="282" selection-end="282" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
-          <folding />
-        </state>
+        <state line="12" column="0" selection-start="282" selection-end="282" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/application/_header.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="84" selection-start="296" selection-end="296" vertical-scroll-proportion="0.0884583" vertical-offset="0" max-vertical-offset="1187">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/welcome/index.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1210">
-          <folding />
-        </state>
+        <state line="7" column="84" selection-start="296" selection-end="296" vertical-scroll-proportion="0.0884583" vertical-offset="0" max-vertical-offset="1187" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/devise/registrations/edit.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="0" selection-start="1123" selection-end="1123" vertical-scroll-proportion="0.42606518" vertical-offset="0" max-vertical-offset="1197">
-          <folding />
-        </state>
+        <state line="34" column="0" selection-start="1123" selection-end="1123" vertical-scroll-proportion="0.42606518" vertical-offset="0" max-vertical-offset="1197" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20131214190343_create_comments.the_comments_engine.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1211">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1211" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20131214190342_change_user.the_comments_engine.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1211">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1211" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20131214190344_change_commentable.the_comments_engine.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1234">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1234" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20131216100532_add_username_to_users.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1234">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1234" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/authenticated/items/edit.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="127" selection-start="555" selection-end="555" vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="210">
-          <folding />
-        </state>
+        <state line="8" column="127" selection-start="555" selection-end="555" vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="210" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/devise/registrations/new.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="30" selection-start="201" selection-end="219" vertical-scroll-proportion="0.0758214" vertical-offset="0" max-vertical-offset="1187">
-          <folding />
-        </state>
+        <state line="6" column="30" selection-start="201" selection-end="219" vertical-scroll-proportion="0.0758214" vertical-offset="0" max-vertical-offset="1187" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/the_comments/haml/_tree.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="34" selection-start="234" selection-end="234" vertical-scroll-proportion="0.0379107" vertical-offset="0" max-vertical-offset="1187">
-          <folding />
-        </state>
+        <state line="3" column="34" selection-start="234" selection-end="234" vertical-scroll-proportion="0.0379107" vertical-offset="0" max-vertical-offset="1187" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/the_comments/haml/manage.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="88" selection-start="661" selection-end="661" vertical-scroll-proportion="0.2274642" vertical-offset="0" max-vertical-offset="1187">
-          <folding />
-        </state>
+        <state line="18" column="88" selection-start="661" selection-end="661" vertical-scroll-proportion="0.2274642" vertical-offset="0" max-vertical-offset="1187" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/the_comments/haml/_manage_controls.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="13" selection-start="1196" selection-end="1196" vertical-scroll-proportion="0.3285594" vertical-offset="0" max-vertical-offset="1187">
-          <folding />
-        </state>
+        <state line="26" column="13" selection-start="1196" selection-end="1196" vertical-scroll-proportion="0.3285594" vertical-offset="0" max-vertical-offset="1187" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/the_comments/haml/my_comments.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="39" selection-start="428" selection-end="428" vertical-scroll-proportion="0.17355372" vertical-offset="0" max-vertical-offset="1210">
-          <folding />
-        </state>
+        <state line="14" column="39" selection-start="428" selection-end="428" vertical-scroll-proportion="0.17355372" vertical-offset="0" max-vertical-offset="1210" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/schema.rb">
@@ -998,44 +868,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/comment.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="97" selection-start="666" selection-end="666" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="615">
-          <folding />
-        </state>
+        <state line="16" column="97" selection-start="666" selection-end="666" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="615" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/initializers/the_comments.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="33" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/authenticated/items/_item.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="26" selection-start="96" selection-end="96" vertical-scroll-proportion="0.024793388" vertical-offset="0" max-vertical-offset="1210">
-          <folding />
-        </state>
+        <state line="3" column="33" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/the_comments/haml/_sidebar.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="64" selection-start="1643" selection-end="1643" vertical-scroll-proportion="0.3411963" vertical-offset="0" max-vertical-offset="1187">
-          <folding />
-        </state>
+        <state line="27" column="64" selection-start="1643" selection-end="1643" vertical-scroll-proportion="0.3411963" vertical-offset="0" max-vertical-offset="1187" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/the_comments/haml/index.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="351" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1187">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/authenticated/items/show.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="25" selection-start="373" selection-end="373" vertical-scroll-proportion="-11.25" vertical-offset="0" max-vertical-offset="480">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="351" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1187" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/authenticated/items_controller.rb">
@@ -1047,114 +895,123 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/the_comments/haml/_comment_edit.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="5" selection-start="609" selection-end="609" vertical-scroll-proportion="-10.625" vertical-offset="0" max-vertical-offset="345">
-          <folding />
-        </state>
+        <state line="17" column="5" selection-start="609" selection-end="609" vertical-scroll-proportion="-10.625" vertical-offset="0" max-vertical-offset="345" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/the_comments/haml/_additional_info.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="33" selection-start="219" selection-end="219" vertical-scroll-proportion="0.1137321" vertical-offset="0" max-vertical-offset="1187">
-          <folding />
-        </state>
+        <state line="9" column="33" selection-start="219" selection-end="219" vertical-scroll-proportion="0.1137321" vertical-offset="0" max-vertical-offset="1187" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/the_comments/haml/_form.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="57" selection-start="724" selection-end="724" vertical-scroll-proportion="-12.5" vertical-offset="0" max-vertical-offset="405">
-          <folding />
-        </state>
+        <state line="20" column="57" selection-start="724" selection-end="724" vertical-scroll-proportion="-12.5" vertical-offset="0" max-vertical-offset="405" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/authenticated/comments_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="61" selection-start="1523" selection-end="1523" vertical-scroll-proportion="0.5105348" vertical-offset="0" max-vertical-offset="1234">
-          <folding />
-        </state>
+        <state line="42" column="61" selection-start="1523" selection-end="1523" vertical-scroll-proportion="0.5105348" vertical-offset="0" max-vertical-offset="1234" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/the_comments/haml/_comment_body.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="27" selection-start="85" selection-end="85" vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="225">
-          <folding />
-        </state>
+        <state line="2" column="27" selection-start="85" selection-end="85" vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="225" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/the_comments/haml/_comment.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1211">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1211" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/the_comments.js.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="14" selection-start="1254" selection-end="1254" vertical-scroll-proportion="0.4954583" vertical-offset="0" max-vertical-offset="1680">
-          <folding />
-        </state>
+        <state line="40" column="14" selection-start="1254" selection-end="1254" vertical-scroll-proportion="0.4954583" vertical-offset="0" max-vertical-offset="1680" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/the_comments_manage.js.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="818">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="818" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/the_comments.css.scss">
+    <entry file="file://$PROJECT_DIR$/app/views/authenticated/items/test.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="181" column="20" selection-start="3108" selection-end="3108" vertical-scroll-proportion="-31.333334" vertical-offset="1963" max-vertical-offset="3810">
-          <folding />
-        </state>
+        <state line="8" column="39" selection-start="94" selection-end="202" vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="285" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="31" selection-start="768" selection-end="768" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/authenticated/items.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="24" selection-start="308" selection-end="308" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/locales/en.the_comments.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="37" selection-start="894" selection-end="894" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1065">
+        <state line="35" column="37" selection-start="894" selection-end="894" vertical-scroll-proportion="0.4254457" vertical-offset="0" max-vertical-offset="1234" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/locales/flash.en.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1234">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/locales/en.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="6" selection-start="1104" selection-end="1112" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1050">
+        <state line="47" column="28" selection-start="1126" selection-end="1126" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1050">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/authenticated/items/test.html.haml">
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="39" selection-start="94" selection-end="202" vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="285">
+        <state line="25" column="23" selection-start="796" selection-end="796" vertical-scroll-proportion="-15.625" vertical-offset="0" max-vertical-offset="1095">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/welcome/index.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="5" selection-start="78" selection-end="78" vertical-scroll-proportion="0.037190083" vertical-offset="0" max-vertical-offset="1210">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/the_comments.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="64" column="26" selection-start="1139" selection-end="1139" vertical-scroll-proportion="-40.0" vertical-offset="0" max-vertical-offset="3810">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/authenticated/items/show.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="14" selection-start="82" selection-end="82" vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="495">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/authenticated/items/_item.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="13" selection-start="83" selection-end="83" vertical-scroll-proportion="0.024793388" vertical-offset="0" max-vertical-offset="1210">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/authenticated/items.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="14" selection-start="97" selection-end="97" vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="1245">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="31" selection-start="768" selection-end="768" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/authenticated/items.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="24" selection-start="308" selection-end="308" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
+        <state line="74" column="5" selection-start="1191" selection-end="1191" vertical-scroll-proportion="-42.291668" vertical-offset="95" max-vertical-offset="1320">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/authenticated/items/index.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="30" selection-start="216" selection-end="216" vertical-scroll-proportion="0.11499148" vertical-offset="0" max-vertical-offset="1174">
+        <state line="20" column="21" selection-start="868" selection-end="868" vertical-scroll-proportion="0.25062656" vertical-offset="0" max-vertical-offset="1197">
           <folding />
         </state>
       </provider>

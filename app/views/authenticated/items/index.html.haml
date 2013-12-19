@@ -8,15 +8,17 @@
 %p
 .center
   = link_to nil, id: 'new-item', class: 'btn btn-danger' do
-    = icon_label 'icon-plus', t('.add_item')
+    = icon_label 'icon-plus', t('authenticated.items.add_item')
 #new-item.well.span5
   = simple_form_for @item, html: { id: 'new-item', class: 'form-horizontal' } do |form|
     = form.input :name, required: true, placeholder: t('authenticated.items.item.name.input_placeholder'), input_html: { class: 'span5' }
     = form.input :url, required: false, placeholder: t('authenticated.items.item.url.input_placeholder'), input_html: { class: 'span5' }
     %br
-      Choose the bg color for your item on the list
+    #items.item
+      Choose the category
       = select_tag "category", options_for_select([ "food", "office", "bathroom", "other" ])
       %br
+    Choose the amount
     = form.submit t('common.submit'), class: 'btn btn-success', data: { disable_with: t('common.please_wait') }
 
 #items

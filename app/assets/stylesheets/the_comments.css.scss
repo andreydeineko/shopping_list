@@ -1,5 +1,5 @@
 .comments_tree, .comments_list{
-  font-family: "Cabin", Verdana, sans-serif;
+  font-family: Georgia;
 
   margin:0;
   padding:0;
@@ -23,7 +23,7 @@
 }
 
 .comments, .comments_tree{
-  font-family: Garmond;
+  font-family: Georgia;
   font-size: 13px;
   color: slateblue;
 
@@ -62,7 +62,7 @@
     }
     textarea{
       border: 1px solid gray;
-      font-family: "Cabin", Verdana, sans-serif;
+      font-family: Georgia;
       font-size: 13px;
       height: 150px;
       padding: 4px;
@@ -160,7 +160,7 @@
       border-radius: 3px;
       padding: 5px;
     }
-    &.highlighted{ border: 2px dashed red !important; }
+    &.highlighted{ border: 1px dashed deepskyblue !important; }
 
   }
 
