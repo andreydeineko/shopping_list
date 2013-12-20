@@ -5,10 +5,8 @@ Foodlist::Application.routes.draw do
 
   scope module: 'authenticated' do
     resources :items do
-      member do
-        put "like", to: "items#like"
-        put "dislike", to: "items#dislike"
-      end
+      get "like", to: "items#like"
+      get "dislike", to: "items#dislike"
     end
 
   concern   :user_comments,  TheComments::UserRoutes.new

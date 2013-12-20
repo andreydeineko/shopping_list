@@ -1,14 +1,15 @@
 .item{:id => 'item-#{item.id}'}
   = link_to item.name, item_path(item)
   .pull-right#item-options
-    = @item.likes.size
-    = link_to like_item_path(item), method: :put do
-      %icon.icon-thumbs-up
-    = link_to dislike_item_path(item), method: :put do
-      %icon.icon-thumbs-down
-    = @item.dislikes.size
     - if item.user_id == current_user.id
       = link_to edit_item_path(item), { :action => 'edit' } do
         %icon.icon-pencil
       = link_to item_path(item), method: 'delete' do
         %icon.icon-trash
+    - else
+      = item.upvotes.size
+      = link_to item_like_path(item), method: :get do
+        %icon.icon-thumbs-up
+      = link_to item_dislike_path(item), method: :get do
+        %icon.icon-thumbs-down
+      = 0 - item.downvotes.size

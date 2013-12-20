@@ -33,7 +33,7 @@ en:
     contacts: "Contacts:"
     content: "Message:"
 
-    guest_name: "%{user.email} wrote"
+    guest_name: "#{current_user.name} wrote"
     reply: Reply to this comment
     edit: Edit
     to_spam: Spam!

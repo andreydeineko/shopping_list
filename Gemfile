@@ -60,7 +60,7 @@ group :doc do
 end
 
 group :development do
-  gem 'sqlite3'
+  gem 'sqlite3', '~>1.3.7'
 end
 
 group :production do

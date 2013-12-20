@@ -1,4 +1,5 @@
 class Authenticated::ItemsController < Authenticated::BaseController
+  respond_to :html, :js
 
   before_filter :find_item!, only: [ :update, :destroy ]
 
@@ -10,7 +11,7 @@ class Authenticated::ItemsController < Authenticated::BaseController
   def show
     @item = Item.find(params[:id])
     # Comments
-    @comments = @item.comments.with_state([:draft, :published])
+    @comments = @item.comments.with_state([:published])
     #flash[:error] = "Item's not found" and return unless @item
   end
 
@@ -43,14 +44,15 @@ class Authenticated::ItemsController < Authenticated::BaseController
   # Voting
 
   def like
-    @item = Item.find(params[:id])
-    @item.liked_by current_user
+    @item = Item.find_by_id(params[:item_id])
+    @item.upvote_from current_user
+    #render nothing: true, status: 200
     redirect_to items_path
   end
 
   def dislike
-    @item = Item.find(params[:id])
-    @item.disliked_by current_user
+    @item = Item.find_by_id(params[:item_id])
+    @item.downvote_from current_user
     redirect_to items_path
   end
 
