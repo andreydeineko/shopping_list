@@ -84,6 +84,7 @@ ActiveRecord::Schema.define(version: 20131219141054) do
     t.integer  "published_comcoms_count",     default: 0
     t.integer  "deleted_comcoms_count",       default: 0
     t.integer  "spam_comcoms_count",          default: 0
+    t.string   "username"
     t.string   "name"
   end
 

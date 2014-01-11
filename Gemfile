@@ -63,9 +63,22 @@ group :development do
   gem 'sqlite3', '~>1.3.7'
 end
 
+group :test do
+  gem 'shoulda-matchers'
+  #gem 'database_cleaner', '1.0.1'
+  gem 'capybara'
+  gem 'selenium-webdriver'
+end
+
 group :production do
  # gem 'pg' '~> 0.17.0'
   gem 'rails_12factor', '0.0.2'
+end
+
+group :development, :test do
+  gem 'pry-rails'
+  gem 'factory_girl_rails' # factory generators
+  gem 'rspec-rails'
 end
 
 #Comments
