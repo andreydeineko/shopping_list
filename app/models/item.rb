@@ -13,9 +13,12 @@ class Item < ActiveRecord::Base
   validates :name, presence: true, uniqueness: true
   scope :recent_first, -> { order('items.created_at DESC') }
 
+  def commentable_state
+    "published"
+  end
 
   def self.highest_voted
-    self.order("cached_votes_up - cached_votes_down DESC")
+    self.order("items.cached_votes_score DESC")
   end
   # Item.highest_voted
 end

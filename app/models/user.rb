@@ -3,7 +3,11 @@ class User < ActiveRecord::Base
   include TheComments::User
 
   def comments_moderator? comment
-    id == comment.holder_id
+    id == comment.user_id
+  end
+
+  def comments_admin?
+    true
   end
 
   # Voting

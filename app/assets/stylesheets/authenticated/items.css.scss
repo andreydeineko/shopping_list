@@ -13,6 +13,7 @@ body#authenticated-items {
     cursor: pointer;
   }
   #new-item {
+    display: none;
     float: none;
     margin: 25px auto;
     background: #e0e4f5;
@@ -52,6 +53,7 @@ body#authenticated-items {
   }
 
   #items {
+    display: none;
     padding-top: 5px;
     .item {
       border-top: 1px solid #eee;

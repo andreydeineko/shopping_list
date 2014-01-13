@@ -16,6 +16,6 @@
       .panel{ class: "panel-#{klass}" }
         .panel-body
           = render partial: 'the_comments/haml/comment_edit', locals: { comment: comment }
-          = render partial: 'the_comments/haml/comment_body', locals: { comment: comment
+          = render partial: 'the_comments/haml/comment_body', locals: { comment: comment }
         
   = paginate @comments

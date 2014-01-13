@@ -1,8 +1,8 @@
 FactoryGirl.define do
-  factory :items do
+  factory :item do
   	sequence(:name) { |seq| "Item-#{seq}" }
   	url "http://www.imdb.com/chart/top"
 
-  	user #assosiation
+  	user
   end
 end

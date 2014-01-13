@@ -10,7 +10,8 @@ Foodlist::Application.routes.draw do
     end
 
   concern   :user_comments,  TheComments::UserRoutes.new
-  resources :comments, concerns:  [:user_comments]
+  concern   :admin_comments, TheComments::AdminRoutes.new
+  resources :comments, concerns:  [:user_comments, :admin_comments]
   end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

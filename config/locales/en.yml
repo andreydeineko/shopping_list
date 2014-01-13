@@ -41,12 +41,12 @@ en:
 
   welcome:
     index:
-      greeting: "Welcome #{current_user.name}! Please visit <a class='important' href='%{url}'>List of items</a> to post your request!"
+      greeting: "Welcome %{name}! Please visit <a class='important' href='%{url}'>List of items</a> to post your request!"
 
   authenticated:
     items:
       add_item: 'Request new item'
-      header: 'Before you make a request, check out, what your colleagues already ordered!'
+      header: 'Before you make a request check out, what your colleagues already ordered!'
       item:
         edit: 'Save changes'
         destroy: 'Delete item'

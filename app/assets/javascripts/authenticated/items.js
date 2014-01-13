@@ -1,17 +1,14 @@
-
-$('#items').hide();
-$('a#items-container').click(function(){
-    $('#items').slideToggle('fast', function(){
+$(document).ready(function() {
+    $('a#items-container').click(function(){
+        $('#items').slideToggle('fast');
+        event.preventDefault();
+        event.stopPropagation();
     });
-    event.preventDefault();
-    event.stopPropagation();
-});
 
 
-$('#new-item').hide();
-$('a#new-item-container').click(function(){
-    $('#new-item').slideToggle('fast', function(){
+    $('a#new-item-container').click(function(){
+        $('#new-item').slideToggle('fast');
+        event.preventDefault();
+        event.stopPropagation();
     });
-    event.preventDefault();
-    event.stopPropagation();
 });

@@ -1,10 +1,12 @@
-.item{:id => 'item-#{item.id}'}
-  = link_to item.name, item_path(item)
+= link_to item_path(item) do
+  .item{:id => "item-#{item.id}"}
+    = item.name
+
   .pull-right#item-options
     - if item.user_id == current_user.id
-      = link_to edit_item_path(item), { :action => 'edit' } do
+      = link_to edit_item_path(item), id: "edit-item-#{item.id}" do
         %icon.icon-pencil
-      = link_to item_path(item), method: 'delete' do
+      = link_to item_path(item), id: "destroy-item-#{item.id}", method: 'delete' do
         %icon.icon-trash
     - else
       = item.upvotes.size

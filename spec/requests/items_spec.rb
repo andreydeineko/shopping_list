@@ -27,9 +27,9 @@ describe 'Items' do
       item = FactoryGirl.create(:item, user: user)
       visit items_path
 
-      click_link "edit-item-name-#{item.id}"
+      click_link "edit-item-#{item.id}"
       fill_in 'item_name', with: new_item_name
-      click_link I18n.t('authenticated.items.item.edit')
+      click_button I18n.t('authenticated.items.item.edit')
 
       page.should have_content(new_item_name)
     end
@@ -40,8 +40,7 @@ describe 'Items' do
       item = FactoryGirl.create(:item, user: user)
 
       visit items_path
-      click_link I18n.t('authenticated.items.item.destroy')
-      page.driver.browser.switch_to.alert.accept
+      click_link "destroy-item-#{item.id}"
       page.should_not have_content(item.name)
     end
   end

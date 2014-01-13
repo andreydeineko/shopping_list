@@ -12,9 +12,6 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
-//= require jquery.ui.all
 //= require bootstrap
-//= require_tree .
 //= require the_comments
 //= require authenticated/items
