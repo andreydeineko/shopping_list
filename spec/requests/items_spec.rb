@@ -8,7 +8,7 @@ describe 'Items' do
   describe 'Create' do
     let(:item) { FactoryGirl.build(:item) }
 
-  	it 'should create new item' do
+  	it 'creates new item' do
   	  visit items_path
 
   	  click_link I18n.t('authenticated.items.add_item')
@@ -16,14 +16,14 @@ describe 'Items' do
   	  fill_in 'item_url', with: item.url
   	  click_button I18n.t('common.submit')
 
-  	  page.should have_content item.name
+  	  expect(page).to have_content item.name
   	end
   end
 
   describe 'Update' do
     let(:new_item_name) { 'New item name' }
 
-    it 'should update item' do
+    it 'updates item' do
       item = FactoryGirl.create(:item, user: user)
       visit items_path
 
@@ -31,17 +31,17 @@ describe 'Items' do
       fill_in 'item_name', with: new_item_name
       click_button I18n.t('authenticated.items.item.edit')
 
-      page.should have_content(new_item_name)
+      expect(page).to have_content(new_item_name)
     end
   end
 
   describe 'Destroy' do
-    it 'should destroy item' do
+    it 'destroys item' do
       item = FactoryGirl.create(:item, user: user)
 
       visit items_path
       click_link "destroy-item-#{item.id}"
-      page.should_not have_content(item.name)
+      expect(page).to_not have_content(item.name)
     end
   end
 

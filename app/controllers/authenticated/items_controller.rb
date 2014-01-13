@@ -46,7 +46,6 @@ class Authenticated::ItemsController < Authenticated::BaseController
   def like
     @item = Item.find_by_id(params[:item_id])
     @item.upvote_from current_user
-    #render nothing: true, status: 200
     redirect_to items_path
   end
 

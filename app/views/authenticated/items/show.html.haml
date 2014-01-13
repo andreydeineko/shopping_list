@@ -16,7 +16,7 @@
   /    %icon.icon-trash
 #request-info
   This item was requested by
-  = current_user.email
+  = current_user.name
   %br
   Request date:
   = @item.created_at #t.strftime("#{t.day.ordinalize} %B, %Y %I:%M %p")
