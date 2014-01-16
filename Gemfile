@@ -66,13 +66,13 @@ end
 group :test do
   gem 'shoulda-matchers'
   #gem 'database_cleaner', '1.0.1'
-  gem 'capybara'
+  gem 'capybara' 
   gem 'selenium-webdriver'
   gem 'simplecov', :require => false
 end
 
 group :production do
- # gem 'pg' '~> 0.17.0'
+  gem 'pg'
   gem 'rails_12factor', '0.0.2'
 end
 
@@ -93,8 +93,9 @@ gem 'acts_as_votable', '~> 0.8.0'
 gem 'omniauth'
 gem "omniauth-google-oauth2"
 
+#Heroku deployment
+gem "heroku", "~> 3.2.2"
 gem 'unicorn'
-
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
