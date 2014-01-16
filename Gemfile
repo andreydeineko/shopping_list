@@ -54,34 +54,6 @@ gem 'jbuilder', '~> 1.2'
 # Pagination
 gem 'kaminari'
 
-group :doc do
-  # bundle exec rake doc:rails generates the API under doc/api.
-  gem 'sdoc', require: false
-end
-
-group :development do
-  gem 'sqlite3', '~>1.3.7'
-end
-
-group :test do
-  gem 'shoulda-matchers'
-  #gem 'database_cleaner', '1.0.1'
-  gem 'capybara' 
-  gem 'selenium-webdriver'
-  gem 'simplecov', :require => false
-end
-
-group :production do
-  gem 'pg'
-  gem 'rails_12factor', '0.0.2'
-end
-
-group :development, :test do
-  gem 'pry-rails'
-  gem 'factory_girl_rails' # factory generators
-  gem 'rspec-rails'
-end
-
 #Comments
 gem "the_comments", "~> 2.2.0"
 gem 'awesome_nested_set'
@@ -96,6 +68,39 @@ gem "omniauth-google-oauth2"
 #Heroku deployment
 gem "heroku", "~> 3.2.2"
 gem 'unicorn'
+
+group :doc do
+  # bundle exec rake doc:rails generates the API under doc/api.
+  gem 'sdoc', require: false
+end
+
+group :development do
+  gem 'zeus'
+  gem 'meta_request'
+  gem 'sqlite3'
+end
+
+group :test do
+  gem 'shoulda-matchers'
+# gem 'database_cleaner', '1.0.1'
+# gem 'guard-rspec'
+  gem 'capybara'
+  gem 'selenium-webdriver'
+# gem 'rb-inotify'
+  gem 'simplecov', :require => false
+end
+
+group :development, :test do
+  gem 'pry-rails'
+  gem 'factory_girl_rails' # factory generators
+  gem 'rspec-rails'
+end
+
+group :production do
+  gem 'pg'
+  gem 'rails_12factor'
+end
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
