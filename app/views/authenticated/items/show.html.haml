@@ -22,15 +22,17 @@
   requested
   - if @item.amount == nil
     = @item.name
+  - elsif @item.amount.match(/[\d]/)
+    = @item.amount
+    = @item.name
   - else
     = @item.amount
     of
     = @item.name
   
+  = time_ago_in_words(@item.created_at) 
+  ago
   = @item.url
-  %br
-  Request date:
-  = @item.created_at #t.strftime("#{t.day.ordinalize} %B, %Y %I:%M %p")
   %br
 %hr
 - if @item.comments.count == 1
@@ -45,5 +47,5 @@
 = render partial: 'the_comments/tree', locals: { commentable: @item, comments_tree: @comments }
 .center
   %hr
-  = link_to 'Back to list of items', {:action => 'index'}
+  = link_to 'Back to list of items', {:action => 'index'}, class: 'important'
   %hr

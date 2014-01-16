@@ -42,7 +42,7 @@ en:
 
   welcome:
     index:
-      greeting: "<p>Welcome <strong><u>%{name}</u></strong>!</p> Please visit <a class='important' href='%{url}'>List of items</a> to post your request!"
+      greeting: "Welcome <strong><u>%{name}</u></strong>! Please visit <a class='important' href='%{url}'>List of items</a> to post your request!"
 
   authenticated:
     items:
