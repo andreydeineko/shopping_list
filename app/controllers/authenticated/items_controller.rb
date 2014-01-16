@@ -58,7 +58,7 @@ class Authenticated::ItemsController < Authenticated::BaseController
   private
 
   def item_params
-    params.require(:item).permit(:name, :url)
+    params.require(:item).permit(:name, :url, :category)
   end
 
   def find_item!

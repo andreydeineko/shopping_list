@@ -57,22 +57,24 @@ body#authenticated-items {
     padding-top: 5px;
     .item {
       border-top: 1px solid #eee;
-      padding: 0;
+      padding: 0 0 0 1em;
       margin: 0;
+      position: relative;
+      line-height: 1.75em;
 
       &:hover {
         background: #e0e4f5;
-        cursor: pointer;
       }
 
       &:before {
         content: "";
-        display: inline-block;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
         width: 0.5em;
-        height: 1.75em;
+        height: 100%;
         line-height: 1;
-        vertical-align: -0.5em;
-        margin-right: 0.5em;
         background: #000;
       }
 
@@ -90,6 +92,26 @@ body#authenticated-items {
 
       &.bathroom:before {
         background: #bada55;
+      }
+    }
+
+    .item-link {
+      display: block;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+    .item-options {
+      position: absolute;
+      top: 0;
+      right: 0;
+
+      a {
+        &:hover {
+          text-decoration: none;
+        }
       }
     }
   }

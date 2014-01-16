@@ -20,6 +20,6 @@
       =form.input :category, :as => :select, collection: ["food", "office", "bathroom", "other"], default: "food"
       /%br
     /Choose the amount
-    /= form.input :amount, required: true, t('authenticated.items.item.amount.input_placeholder'), input_html: { class: 'span3' }
+    = form.input :amount, required: true, t('authenticated.items.item.amount.input_placeholder'), input_html: { class: 'span3' }
     = form.submit t('common.submit'), class: 'btn btn-success', remote: true, data: { disable_with: t('common.please_wait') }
 

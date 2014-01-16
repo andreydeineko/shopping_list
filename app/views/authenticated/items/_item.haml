@@ -1,17 +1,17 @@
-= link_to item_path(item) do
-  .item{:id => "item-#{item.id}"}
+%div{:id => "item-#{item.id}", :class => "item #{item.category}"}
+  = link_to item_path(item), class: "item-link" do
     = item.name
 
-  .pull-right#item-options
+  .item-options
     - if item.user_id == current_user.id
       = link_to edit_item_path(item), id: "edit-item-#{item.id}" do
-        %icon.icon-pencil
+        %i.icon-pencil
       = link_to item_path(item), id: "destroy-item-#{item.id}", method: 'delete' do
-        %icon.icon-trash
+        %i.icon-trash
     - else
       = item.upvotes.size
       = link_to item_like_path(item), method: :get do
-        %icon.icon-thumbs-up
+        %i.icon-thumbs-up
       = link_to item_dislike_path(item), method: :get do
-        %icon.icon-thumbs-down
+        %i.icon-thumbs-down
       = 0 - item.downvotes.size
