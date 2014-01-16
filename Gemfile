@@ -93,6 +93,8 @@ gem 'acts_as_votable', '~> 0.8.0'
 gem 'omniauth'
 gem "omniauth-google-oauth2"
 
+gem 'unicorn'
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'

@@ -13,11 +13,6 @@
 
 ActiveRecord::Schema.define(version: 20140116092848) do
 
-  create_table "categories", force: true do |t|
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "comments", force: true do |t|
     t.integer  "user_id"
     t.integer  "holder_id"
@@ -91,7 +86,6 @@ ActiveRecord::Schema.define(version: 20140116092848) do
     t.integer  "published_comcoms_count",     default: 0
     t.integer  "deleted_comcoms_count",       default: 0
     t.integer  "spam_comcoms_count",          default: 0
-    t.string   "username"
     t.string   "name"
   end
 
