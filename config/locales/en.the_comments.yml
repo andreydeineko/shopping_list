@@ -33,7 +33,7 @@ en:
     contacts: "Contacts:"
     content: "Message:"
 
-    guest_name: "Guest"
+    guest_name: ''
     reply: Reply to this comment
     edit: Edit
     to_spam: Spam!
@@ -47,6 +47,7 @@ en:
       header: "Navigation"
 
     form:
+      title: Your name
       content: "Comment:"
       create: "Submit comment"
       thank_you:  "Thank you!"

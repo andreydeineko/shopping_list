@@ -107,49 +107,28 @@
     overflow: hidden; zoom: 1;
 
 
-    .userpic{
-      overflow: hidden; zoom: 1;
-      float: left;
-      width: 50px;
+    .userpic,
+    .userbar {
+      display: none;
 
-      img{ margin-bottom: 10px; width: 42px; height: 42px; }
+    }
+    .cbody {
+      font-size: 16px;
+      color: black;
+      background: #e0e4f5;
+      border-radius: 5px;
+      
+
     }
 
-    .userbar, .cbody{
-      margin: 0 0 5px 55px;
-      padding: 3px;
-    }
-    .userbar{
-      background: #eff5f3;
-      border-radius: 3px;
-      padding-left: 7px;
-    }
-    &.draft{
-      .userbar{ background: #ffa768; }
-      .to_draft{ display: none; }
-    }
-    &.published{
-      .to_published{ display: none; }
-    }
-    .cbody{
-      font-size: 15px;
-      border-bottom: 1px solid #eee;
-      padding-bottom: 10px;
-      line-height: 135%;
-      margin-bottom: 3px;
-      overflow: hidden;
-    }
     .reply{
-      margin: 0 0 5px 55px;
-      font-size: 12px;
+      
+      font-size: 13px;
     }
   }
 
   .controls{
-    a{
-      font-size:11px; /*Edit button */
-      display:block;
-    }
+    display:none;
   }
 
   .comment{

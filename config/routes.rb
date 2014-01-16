@@ -1,7 +1,7 @@
 Foodlist::Application.routes.draw do
   root to: "welcome#index"
 
-  devise_for :users
+  devise_for :users, controllers: {omniauth_callbacks: "omniauth_callbacks"}
 
   scope module: 'authenticated' do
     resources :items do

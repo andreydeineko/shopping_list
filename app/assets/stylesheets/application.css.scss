@@ -11,7 +11,6 @@
  *= require_self
  *= require bootstrap-editable
  *= require jquery.ui.all
- *= require the_comments
 
 */
 
@@ -29,6 +28,7 @@
 @import 'common/classes';
 
 @import "authenticated/items";
+@import "authenticated/the_comments";
 
 
 // Application styles END

@@ -8,5 +8,6 @@
       .panel{ class: "panel-#{klass}" }
         .panel-body
           = render partial: 'the_comments/haml/comment_body', locals: { comment: comment }
+          = @comment.user.name
 
   = paginate @comments

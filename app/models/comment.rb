@@ -13,8 +13,7 @@ class Comment < ActiveRecord::Base
   #
   def avatar_url
     src = id.to_s
-    src = title unless title.blank?
-    "https://lh6.googleusercontent.com/-PLY81XFPULo/AAAAAAAAAAI/AAAAAAAAAFI/rW7gRvW3Mp4/photo.jpg"
+
   end
   # ---------------------------------------------------
 

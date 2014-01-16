@@ -88,6 +88,10 @@ gem 'awesome_nested_set'
 #Voting
 gem 'acts_as_votable', '~> 0.8.0'
 
+# Gmail auth
+gem 'omniauth'
+gem "omniauth-google-oauth2"
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'

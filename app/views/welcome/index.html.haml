@@ -2,5 +2,7 @@
   = t('.greeting', url: items_path, name: current_user.name).html_safe
 -else
   #authentication-options
-    Please either #{link_to t('auth.sign_in'), new_user_session_path, class: 'important'} or
+    #{link_to t('auth.sign_in'), new_user_session_path, class: 'important'} or
     \#{link_to t('auth.sign_up'), new_user_registration_path, class: 'important'} to leave request
+    %hr
+    #{link_to t('auth.sign_in_gmail'), user_omniauth_authorize_path(:google_oauth2), class: 'important'}
