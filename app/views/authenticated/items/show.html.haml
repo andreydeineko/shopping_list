@@ -1,6 +1,8 @@
 #auth-info
   You are logged in as
-  = current_user.name
+  %b 
+    %u
+      = current_user.name
 #item-name
   = @item.name
   /.pull-right#item-options
@@ -15,7 +17,8 @@
   /  = link_to item_path(item), method: 'delete' do
   /    %icon.icon-trash
 #request-info
-  = @item.user.name
+  %strong
+    = @item.user.name
   requested
   - if @item.amount == nil
     = @item.name

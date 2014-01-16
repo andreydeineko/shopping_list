@@ -42,7 +42,7 @@ en:
 
   welcome:
     index:
-      greeting: "Welcome %{name}! Please visit <a class='important' href='%{url}'>List of items</a> to post your request!"
+      greeting: "<p>Welcome <strong><u>%{name}</u></strong>!</p> Please visit <a class='important' href='%{url}'>List of items</a> to post your request!"
 
   authenticated:
     items:
@@ -52,9 +52,9 @@ en:
         edit: 'Save changes'
         destroy: 'Delete item'
         name:
-          input_placeholder: 'bread'
+          input_placeholder: 'bananas'
         url:
-          input_placeholder: 'www.bread.com'
+          input_placeholder: 'www.food.com'
       edit:
         name:
           input_placeholder: 'Item name goes here..'
