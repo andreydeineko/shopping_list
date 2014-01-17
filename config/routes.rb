@@ -1,7 +1,7 @@
 Foodlist::Application.routes.draw do
   root to: "welcome#index"
   ActiveAdmin.routes(self)
-
+  break if ARGV.join.include? 'assets:precompile'
   #devise_for :admin_users, ActiveAdmin::Devise.config
   devise_for :users, controllers: {omniauth_callbacks: "omniauth_callbacks"}
 
