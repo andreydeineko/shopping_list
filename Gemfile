@@ -66,8 +66,11 @@ gem 'omniauth'
 gem "omniauth-google-oauth2"
 
 #Heroku deployment
-gem "heroku", "~> 3.2.2"
+gem 'heroku', "~> 3.2.2"
 gem 'unicorn'
+
+#Activeadmin
+gem 'activeadmin', github: 'gregbell/active_admin'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
@@ -78,6 +81,8 @@ group :development do
   gem 'zeus'
   gem 'meta_request'
   gem 'sqlite3'
+  gem "better_errors"
+  gem "binding_of_caller"
 end
 
 group :test do

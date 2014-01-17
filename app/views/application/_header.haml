@@ -6,6 +6,8 @@
       - if user_signed_in?
         %li= link_to t('.application'), items_path
         %li= link_to t('auth.sign_out'), destroy_user_session_path, method: 'delete'
+        - if current_user.admin?
+          = link_to 'Admin', admin_dashboard_path
       - else
         %li= link_to t('auth.sign_in'), new_user_session_path
         %li= link_to t('auth.sign_up'), new_user_registration_path

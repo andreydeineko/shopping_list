@@ -20,7 +20,7 @@ Foodlist::Application.configure do
   # config.action_dispatch.rack_cache = true
 
   # Disable Rails's static asset server (Apache or nginx will already do this).
-  config.serve_static_assets = false
+  config.serve_static_assets = true #for Heroku
 
   # Compress JavaScripts and CSS.
   config.assets.js_compressor = :uglifier
@@ -77,4 +77,7 @@ Foodlist::Application.configure do
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
+
+  config.assets.precompile += ['active_admin.js', 'active_admin.css', 'active_admin/print.css'] #for Heroku
+
 end
