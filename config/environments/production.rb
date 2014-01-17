@@ -78,6 +78,7 @@ Foodlist::Application.configure do
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
 
-  config.assets.precompile += ['active_admin.js', 'active_admin.css', 'active_admin/print.css'] #for Heroku
+  config.assets.precompile += %w( active_admin.js application.css application.js  active_admin.css active_admin/print.css active_admin.js )
+  
 
 end
