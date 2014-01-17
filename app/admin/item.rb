@@ -7,5 +7,6 @@ ActiveAdmin.register Item do
 #    column :amount
 #    column "Request Date", :created_at 
 #  end
+#  end
   
 end
