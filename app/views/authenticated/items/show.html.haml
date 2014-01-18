@@ -22,7 +22,7 @@
   requested
   - if @item.amount == nil
     = @item.name
-  - elsif @item.amount.match(/[\d]/)
+  - elsif @item.amount.match(/\d+$/)
     = @item.amount
     = @item.name
   - else

@@ -17,6 +17,24 @@ GIT
       sass-rails
 
 GIT
+  remote: git://github.com/intridea/omniauth-oauth2.git
+  revision: a9ea6f8f58b8ca2d935ef41bf9f85121c14fbc99
+  specs:
+    omniauth-oauth2 (1.1.2)
+      faraday (>= 0.8, < 0.10)
+      multi_json (~> 1.3)
+      oauth2 (~> 0.9.3)
+      omniauth (~> 1.2)
+
+GIT
+  remote: git://github.com/intridea/omniauth.git
+  revision: 2ac32c6f24705a341710880fbb6d627bdcb2a596
+  specs:
+    omniauth (1.2.1)
+      hashie (>= 1.2, < 3)
+      rack (~> 1.0)
+
+GIT
   remote: git://github.com/plataformatec/devise.git
   revision: 7d114271164c7ae39801b07b620d4eddf429a96a
   specs:
@@ -26,6 +44,14 @@ GIT
       railties (>= 3.2.6, < 5)
       thread_safe (~> 0.1)
       warden (~> 1.2.3)
+
+GIT
+  remote: git://github.com/zquestz/omniauth-google-oauth2.git
+  revision: b62461a8bc239d29c6994ea9bf1648f617860d88
+  specs:
+    omniauth-google-oauth2 (0.2.2)
+      omniauth (~> 1.0)
+      omniauth-oauth2
 
 GEM
   remote: https://rubygems.org/
@@ -111,8 +137,8 @@ GEM
     factory_girl_rails (4.3.0)
       factory_girl (~> 4.3.0)
       railties (>= 3.0.0)
-    faraday (0.8.9)
-      multipart-post (~> 1.2.0)
+    faraday (0.9.0)
+      multipart-post (>= 1.2, < 3)
     ffi (1.9.3)
     font-awesome-sass-rails (3.0.2.2)
       railties (>= 3.1.1)
@@ -146,7 +172,6 @@ GEM
       haml (>= 4.0.0.rc.1)
       hpricot (~> 0.8.6)
       ruby_parser (~> 3.1.1)
-    httpauth (0.2.0)
     i18n (0.6.5)
     inherited_resources (1.4.1)
       has_scope (~> 0.6.0.rc)
@@ -160,7 +185,7 @@ GEM
     jquery-ui-rails (4.1.0)
       railties (>= 3.1.0)
     json (1.8.1)
-    jwt (0.1.10)
+    jwt (0.1.11)
       multi_json (>= 1.5)
     kaminari (0.15.0)
       actionpack (>= 3.0.0)
@@ -180,25 +205,19 @@ GEM
     mini_portile (0.5.2)
     minitest (4.7.5)
     multi_json (1.8.2)
-    multipart-post (1.2.0)
+    multi_xml (0.5.5)
+    multipart-post (2.0.0)
     netrc (0.7.7)
     nokogiri (1.6.1)
       mini_portile (~> 0.5.0)
-    oauth2 (0.8.1)
-      faraday (~> 0.8)
-      httpauth (~> 0.1)
-      jwt (~> 0.1.4)
-      multi_json (~> 1.0)
+    oauth2 (0.9.3)
+      faraday (>= 0.8, < 0.10)
+      jwt (~> 0.1.8)
+      multi_json (~> 1.3)
+      multi_xml (~> 0.5)
       rack (~> 1.2)
-    omniauth (1.1.4)
-      hashie (>= 1.2, < 3)
-      rack
-    omniauth-google-oauth2 (0.2.2)
-      omniauth (~> 1.0)
-      omniauth-oauth2
-    omniauth-oauth2 (1.1.1)
-      oauth2 (~> 0.8.0)
-      omniauth (~> 1.0)
+    omniauth-facebook (1.6.0)
+      omniauth-oauth2 (~> 1.1)
     orm_adapter (0.5.0)
     pg (0.17.1)
     polyamorous (0.6.4)
@@ -352,8 +371,10 @@ DEPENDENCIES
   jquery-ui-rails
   kaminari
   meta_request
-  omniauth
-  omniauth-google-oauth2
+  omniauth!
+  omniauth-facebook
+  omniauth-google-oauth2!
+  omniauth-oauth2!
   pg
   pry-rails
   rails (= 4.0.1)
