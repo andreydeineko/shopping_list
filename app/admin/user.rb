@@ -12,6 +12,7 @@ ActiveAdmin.register User do
     column :name
     column :email
     column "Date of registration", :created_at
+    column :admin
 
     default_actions
   end

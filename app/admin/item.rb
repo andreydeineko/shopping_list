@@ -5,6 +5,7 @@ ActiveAdmin.register Item do
   filter :category
   filter :name
   filter :amount
+  filter :comments
   filter :url
   
   index do
@@ -15,6 +16,9 @@ ActiveAdmin.register Item do
     column :amount
     column :url
     column "Request Date", :created_at 
+    column "Likes", :cached_votes_up
+    column "Dislikes", :cached_votes_down
+    column "Voting summary", :cached_votes_score
     
     default_actions
   end
