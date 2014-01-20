@@ -3,7 +3,7 @@ Foodlist::Application.routes.draw do
   ActiveAdmin.routes(self)
   break if ARGV.join.include? 'assets:precompile'
   #devise_for :admin_users, ActiveAdmin::Devise.config
-  devise_for :users, controllers: {omniauth_callbacks: "omniauth_callbacks"}
+  devise_for :users, controllers: {omniauth_callbacks: "omniauth_callbacks", users_controller: "users_controller"}
 
   scope module: 'authenticated' do
     resources :items do

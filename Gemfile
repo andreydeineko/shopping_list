@@ -100,6 +100,7 @@ group :test do
 end
 
 group :development, :test do
+  gem 'dotenv-rails'
   gem 'pry-rails'
   gem 'factory_girl_rails' # factory generators
   gem 'rspec-rails'
@@ -122,4 +123,6 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+#thank for not staying indifferent to the shopping issue in X-team office :)
 

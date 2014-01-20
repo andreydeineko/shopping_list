@@ -1,5 +1,5 @@
 class Item < ActiveRecord::Base
-
+  CATEGORIES = ["food", "office", "bathroom", "other"]
   #Comments
   include TheComments::Commentable
 
