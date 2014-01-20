@@ -1,15 +1,20 @@
 ActiveAdmin.register User do
-
   
- 	form do |f|
-	  	f.inputs "Details" do
-	    	f.input :name
-	    	f.input :email
-	    	f.input :password
-	    	f.input :admin, :as => :boolean
-	  	end
+  config.batch_actions = true
+  
+  filter :name
+  filter :email
+  filter :created_at
 
-	  f.actions
-	end
+  index do
+    selectable_column
+    id_column
+    column :name
+    column :email
+    column "Date of registration", :created_at
+    column :admin
+
+    default_actions
+  end
   
 end

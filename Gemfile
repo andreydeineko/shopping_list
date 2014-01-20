@@ -62,8 +62,12 @@ gem 'awesome_nested_set'
 gem 'acts_as_votable', '~> 0.8.0'
 
 # Gmail auth
-gem 'omniauth'
-gem "omniauth-google-oauth2"
+gem 'omniauth', github: 'intridea/omniauth'
+gem 'omniauth-oauth2', github: 'intridea/omniauth-oauth2'
+gem "omniauth-google-oauth2", github: 'zquestz/omniauth-google-oauth2'
+
+#Facebook auth
+gem 'omniauth-facebook'
 
 #Heroku deployment
 gem 'heroku', "~> 3.2.2"
