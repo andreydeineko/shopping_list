@@ -4,11 +4,9 @@
     %u
       = current_user.name
   %p
-.center
-  = link_to nil, id: 'items-container', class: 'btn btn-danger' do
-    = t('authenticated.items.header')
+  
 #items
-  = render @items, remote: true, html: { id: 'items' }
+  = render @items
 %p
 .center
   = link_to nil, id: 'new-item-container', class: 'btn btn-danger' do

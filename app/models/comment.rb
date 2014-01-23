@@ -1,5 +1,14 @@
 class Comment < ActiveRecord::Base
   include TheComments::Comment
+
+  #VOTING
+    acts_as_votable
+
+    def self.highest_voted
+      self.order("comments.cached_votes_score DESC")
+    end
+
+
   # ---------------------------------------------------
   # Define comment's avatar url
   # Usually we use Comment#user (owner of comment) to define avatar

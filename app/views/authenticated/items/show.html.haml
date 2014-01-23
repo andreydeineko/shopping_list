@@ -5,17 +5,6 @@
       = current_user.name
 #item-name
   = @item.name
-  /.pull-right#item-options
-  /  = @item.likes.size
-  /  = link_to like_item_path(item), method: :put do
-  /    %icon.icon-thumbs-up
-  /  = @item.dislikes.size
-  /  = link_to dislike_item_path(item), method: :put do
-  /    %icon.icon-thumbs-down
-  /  = link_to edit_item_path(item), { :action => 'edit' } do
-  /    %icon.icon-pencil
-  /  = link_to item_path(item), method: 'delete' do
-  /    %icon.icon-trash
 #request-info
   %strong
     = @item.user.name
@@ -26,10 +15,9 @@
     = @item.amount
     = @item.name
   - else
-    = @item.amount
+    @item.amount
     of
     = @item.name
-  
   = time_ago_in_words(@item.created_at) 
   ago
   = @item.url
@@ -38,9 +26,7 @@
 - if @item.comments.count == 1
   There is 1 comment to this item
 - elsif @item.comments.count > 0
-  There are
-  = @item.comments.count
-  comments on this item
+  There are #{'@item.comments.count'} comments on this item
 - else
   There are no comments yet.
 %hr

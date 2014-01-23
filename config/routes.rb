@@ -2,7 +2,7 @@ Foodlist::Application.routes.draw do
   root to: "welcome#index"
   ActiveAdmin.routes(self)
   break if ARGV.join.include? 'assets:precompile'
-  #devise_for :admin_users, ActiveAdmin::Devise.config
+
   devise_for :users, controllers: {omniauth_callbacks: "omniauth_callbacks", users_controller: "users_controller"}
 
   scope module: 'authenticated' do
@@ -11,9 +11,13 @@ Foodlist::Application.routes.draw do
       get "dislike", to: "items#dislike"
     end
 
-  concern   :user_comments,  TheComments::UserRoutes.new
-  concern   :admin_comments, TheComments::AdminRoutes.new
-  resources :comments, concerns:  [:user_comments, :admin_comments]
+    concern   :user_comments,  TheComments::UserRoutes.new
+    concern   :admin_comments, TheComments::AdminRoutes.new
+    resources :comments, concerns:  [:user_comments, :admin_comments]
+    resources :comments do
+      get "like", to: "comments#like"
+      get "dislike", to: "comments#dislike"
+    end
   end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
