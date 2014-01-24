@@ -4,7 +4,7 @@ $(document).ready(function() {
     //     event.preventDefault();
     //     event.stopPropagation();
     // });
-
+    $("#items").tablesorter(); 
 
     $('a#new-item-container').click(function(){
         $('#new-item').slideToggle('fast');

@@ -11,6 +11,25 @@
  *= require_self
  *= require bootstrap-editable
  *= require jquery.ui.all
+ *= require jquery-tablesorter/theme.bootstrap_2
+
+*/
+
+/*
+Avaliable theme names:
+
+theme.black-ice
+theme.blue
+theme.bootstrap
+theme.bootstrap_2
+theme.dark
+theme.default
+theme.dropbox
+theme.green
+theme.grey
+theme.ice
+theme.jui
+pager theme: require jquery-tablesorter/addons/pager/jquery.tablesorter.pager
 
 */
 

@@ -5,6 +5,7 @@
     %title Shopping list
     = stylesheet_link_tag :application, :media => "all"
     = csrf_meta_tags
+
   %body{"data-action" => action_name.dasherize, :id => controller_path.dasherize.gsub('/', '-')}
     #wrapper
       = render 'header'
@@ -13,3 +14,4 @@
         = yield
         #push
   = javascript_include_tag :application
+

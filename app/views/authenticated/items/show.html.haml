@@ -5,19 +5,28 @@
       = current_user.name
 #item-name
   = @item.name
+/ .item-options
+/   = @item.name do |item|
+/   - if item.user_id == current_user.id
+/     = link_to edit_item_path(item), id: "edit-item-#{item.id}" do
+/       %i.icon-pencil
+/     = link_to item_path(item), id: "destroy-item-#{item.id}", method: 'delete' do
+/       %i.icon-trash
+/   - else
+/     = item.upvotes.size
+/     = link_to item_like_path(item), method: :get do
+/       %i.icon-thumbs-up
+/     = link_to item_dislike_path(item), method: :get do
+/       %i.icon-thumbs-down
+/     = 0 - item.downvotes.size
 #request-info
   %strong
     = @item.user.name
   requested
-  - if @item.amount == nil
-    = @item.name
-  - elsif @item.amount.match(/^\d+$/)
-    = @item.amount
-    = @item.name
+  - if @item.amount.match(/^\d+$/)
+    #{@item.amount} #{@item.name}
   - else
-    @item.amount
-    of
-    = @item.name
+    #{@item.amount} of #{@item.name}
   = time_ago_in_words(@item.created_at) 
   ago
   = @item.url
@@ -26,7 +35,7 @@
 - if @item.comments.count == 1
   There is 1 comment to this item
 - elsif @item.comments.count > 0
-  There are #{'@item.comments.count'} comments on this item
+  There are #{@item.comments.count} comments on this item
 - else
   There are no comments yet.
 %hr

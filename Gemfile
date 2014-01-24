@@ -76,6 +76,10 @@ gem 'unicorn'
 #Activeadmin
 gem 'activeadmin', github: 'gregbell/active_admin'
 
+#Sorting stuff
+gem 'jquery-tablesorter'
+gem 'will_paginate'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
