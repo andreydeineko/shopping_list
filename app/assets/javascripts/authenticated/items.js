@@ -6,9 +6,10 @@ $(document).ready(function() {
     // });
     $("#items").tablesorter(); 
 
-    $('a#new-item-container').click(function(){
+    $('a#new-item-container').click(function(event){
         $('#new-item').slideToggle('fast');
         event.preventDefault();
         event.stopPropagation();
+
     });
 });

@@ -4,7 +4,6 @@
     %u
       = current_user.name
   %p
-
 %center
   %table#items.tablesorter
     %thead
@@ -23,16 +22,23 @@
                 %i.icon-pencil
               = link_to item_path(item), id: "destroy-item-#{item.id}", method: 'delete' do
                 %i.icon-trash
-          %td.name= link_to(item.name, item)
+          %td.name.addthis_toolbox.addthis_default_style
+            = link_to(item.name, item)
+            / %a.addthis_counter.addthis_pill_style
+            / :javascript
+            /   var addthis_config = {"data_track_addressbar":true};
+            / %script{src: "//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-52e288bc64b9cb24", type: "text/javascript"}
           %td.center= link_to(item.comments.count, item)
           %td.center
-            = item.upvotes.size
-            = link_to item_like_path(item), method: :get do
-              %i.icon-thumbs-up
+            - if item.user_id != current_user.id
+              = item.upvotes.size
+              = link_to item_like_path(item), method: :get do
+                %i.icon-thumbs-up
           %td.center
-            = link_to item_dislike_path(item), method: :get do
-              %i.icon-thumbs-down
-            = 0 - item.downvotes.size
+            - if item.user_id != current_user.id
+              = link_to item_dislike_path(item), method: :get do
+                %i.icon-thumbs-down
+              = 0 - item.downvotes.size
   = will_paginate
 
 
