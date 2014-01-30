@@ -23,23 +23,26 @@
   %strong
     = @item.user.name
   requested
-  - if @item.amount.match(/^\d+$/)
-    #{@item.amount} #{@item.name}
-  - else
-    #{@item.amount} of #{@item.name}
+  / - if @item.amount.match(/^\d+$/)
+  /   #{@item.amount} #{@item.name}
+  / - else
+  /   #{@item.amount} of #{@item.name}
+  = @item.name
   = time_ago_in_words(@item.created_at) 
   ago
   %br
+  Amount: #{@item.amount}
+  %br
   Link:
-  = link_to @item.URL
+  =link_to @item.URL, @item.URL, target: "_blank" unless @item.URL == nil
   %br
 %hr
-/ - if @item.comments.count == 1
-/   There is 1 comment to this item
-/ - elsif @item.comments.count > 0
-/   There are #{@item.comments.count} comments on this item
-/ - else
-/   There are no comments yet. 
+- if @item.comments.count == 1
+  There is 1 comment to this item
+- elsif @item.comments.count > 0
+  There are #{@item.comments.count} comments on this item
+- else
+  There are no comments yet. 
 
 %hr
 = render partial: 'the_comments/tree', locals: { commentable: @item, comments_tree: @comments }

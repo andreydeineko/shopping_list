@@ -7,7 +7,7 @@
     = f.label :password
     = f.password_field :password
   - if devise_mapping.rememberable?
-    %div
+    %div.remember-me
       = f.check_box :remember_me
       = f.label :remember_me
   %div= f.submit "Sign in", class: 'btn btn-success', data: { disable_with: t('common.please_wait') }

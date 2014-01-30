@@ -66,6 +66,7 @@ module RenderCommentsTreeHelper
               #{ userbar }
               <div class='cbody'>#{ @comment.content }</div>
               #{ reply }
+
             </div>
           </div>
 
@@ -110,3 +111,4 @@ module RenderCommentsTreeHelper
     end
   end
 end
+#  #{controller.try(:current_user) == @comment.user ? (h.link_to(t('the_comments.edit'), h.edit_comment_url(@comment), class: :edit)) : nil }

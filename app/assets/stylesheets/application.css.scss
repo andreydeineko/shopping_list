@@ -12,7 +12,7 @@
  *= require bootstrap-editable
  *= require jquery.ui.all
  *= require jquery-tablesorter/theme.blue
- *= require jquery-tablesorter/addons/pager/jquery.tablesorter.pager
+
 
 */
 
@@ -67,7 +67,7 @@ pager theme: require jquery-tablesorter/addons/pager/jquery.tablesorter.pager
 /* Notifications */
 
     div#notifications {
-      font-family: Georgia;
+      font-family: Comic Sans, Comic Sans MS, cursive;
       margin-top: 25px;
       position: fixed;
       left: 75%;
@@ -85,3 +85,12 @@ pager theme: require jquery-tablesorter/addons/pager/jquery.tablesorter.pager
 
 form.form-inline div.control-group { display: inline-block; }
 form.form-inline div.control-group div.controls { display: inline-block; }
+div.remember-me { 
+  float: left;
+  min-width: 151px;
+  padding-top: 13px;
+  input[type="checkbox"]{
+    float: left;
+    margin-right: 5px;
+  }
+   }

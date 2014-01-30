@@ -3,5 +3,9 @@ en:
     authenticated:
       items:
         create:
-          notice: 'Item is successfully written to list'
-          alert: 'Failed to write item to list'
+          notice: 'Item is successfully written to the list'
+          alert: 'Failed to write item to the list'
+        delete:
+          notice: 'Item is deleted'
+        edit:
+          notice: 'Item is successfully edited'
