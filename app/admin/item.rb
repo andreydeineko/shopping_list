@@ -6,7 +6,7 @@ ActiveAdmin.register Item do
   filter :name
   filter :amount
   filter :comments
-  filter :url, as: :check_boxes
+  filter :URL, as: :check_boxes
   filter "Votes" do
     :cached_votes_score
   end
@@ -20,7 +20,7 @@ ActiveAdmin.register Item do
       link_to(item.name, admin_item_path(item))
     end
     column :amount
-    column :url
+    column :URL
     column "Request Date", :created_at 
     column :comments do |item|
       item.comments.count
@@ -49,7 +49,7 @@ ActiveAdmin.register Item do
         item.cached_votes_score
       end
       row "Link to image/product" do
-        item.url
+        item.URL
       end
     end
     strong { link_to "Back to all items", admin_items_path }

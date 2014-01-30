@@ -30,4 +30,5 @@ ActiveAdmin.register_page "Dashboard" do
 =end
 
   end # content
+   # link_to "User's view", {:action => 'authenticated/index'}
 end

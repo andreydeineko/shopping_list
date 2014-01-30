@@ -11,6 +11,8 @@ class Item < ActiveRecord::Base
 
   # Validations
   validates :name, presence: true, uniqueness: true
+  validates :URL, :format => URI::regexp(%w(http https))
+  
   scope :recent_first, -> { order('items.created_at DESC') }
 
   def commentable_state

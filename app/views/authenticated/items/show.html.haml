@@ -29,18 +29,23 @@
     #{@item.amount} of #{@item.name}
   = time_ago_in_words(@item.created_at) 
   ago
-  = @item.url
+  %br
+  Link:
+  = link_to @item.URL
   %br
 %hr
-- if @item.comments.count == 1
-  There is 1 comment to this item
-- elsif @item.comments.count > 0
-  There are #{@item.comments.count} comments on this item
-- else
-  There are no comments yet.
+/ - if @item.comments.count == 1
+/   There is 1 comment to this item
+/ - elsif @item.comments.count > 0
+/   There are #{@item.comments.count} comments on this item
+/ - else
+/   There are no comments yet. 
+
 %hr
 = render partial: 'the_comments/tree', locals: { commentable: @item, comments_tree: @comments }
 .center
   %hr
-  = link_to 'Back to list of items', {:action => 'index'}, class: 'important'
+  = link_to 'Back to the list of items', {:action => 'index'}, class: 'important'
   %hr
+
+

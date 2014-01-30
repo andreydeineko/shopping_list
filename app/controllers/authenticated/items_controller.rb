@@ -4,8 +4,8 @@ class Authenticated::ItemsController < Authenticated::BaseController
   before_filter :find_item!, only: [ :update, :destroy ]
 
   def index
-    @items = Item.paginate(:page => params[:page], :per_page => 10).recent_first
-    # @items = Item.all.page(params[:page]).recent_first
+    # @items = Item.paginate(:page => params[:page], :per_page => 10).recent_first
+    @items = Item.all.page(params[:page]).recent_first
     @item  = Item.new
   end
 
@@ -59,7 +59,7 @@ class Authenticated::ItemsController < Authenticated::BaseController
   private
 
   def item_params
-    params.require(:item).permit(:name, :url, :category, :amount)
+    params.require(:item).permit(:name, :URL, :category, :amount)
   end
 
   def find_item!

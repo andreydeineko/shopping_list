@@ -4,10 +4,11 @@
     = item.name
 
   .item-options
-    -if item.comments.count == 1
-      #{item.comments.count} comment
-    -else
-      #{item.comments.count} comments
+    / -if item.comments.count == 1
+    /   #{item.comments.count} comment
+    / -else
+    /   #{item.comments.count} comments
+      item.comments.count + (item.comments.count ==1 ? : " comment" : " comments")
     - if item.user_id == current_user.id
       = link_to edit_item_path(item), id: "edit-item-#{item.id}" do
         %i.icon-pencil

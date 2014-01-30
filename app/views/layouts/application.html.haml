@@ -5,6 +5,7 @@
     %title Shopping list
     = stylesheet_link_tag :application, :media => "all"
     = csrf_meta_tags
+    %script{src: "/media/js/jquery.tablesorter.pager.js", type: "text/javascript"}
     .share-buttons.share-buttons-tab{"data-buttons" => "twitter,facebook,email,pinterest", "data-counter" => "true", "data-float" => "left", "data-hover" => "true", "data-promo-callout" => "true", "data-style" => "medium"}
     :javascript
       var js = document.createElement('script'); js.type = 'text/javascript'; js.async = true; js.id = 'AddShoppers';

@@ -33,7 +33,7 @@ en:
     sign_out: 'Sign out'
 
   common:
-    please_wait: 'Please Wait ..'
+    please_wait: 'Please wait ..'
     are_you_sure?: 'Are you sure?'
     submit: 'Submit'
     delete: 'Delete'
@@ -47,8 +47,7 @@ en:
 
   authenticated:
     items:
-      add_item: 'Request new item'
-      header: 'Before you make a request check out, what your colleagues already ordered!'
+      add_item: 'Request a new item'
       item:
         edit: 'Save changes'
         destroy: 'Delete item'

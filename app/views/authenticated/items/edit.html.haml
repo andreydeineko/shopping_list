@@ -4,7 +4,7 @@
 #edit-item.well.span5
   = simple_form_for @item, html: { id: 'edit-item', class: 'form-horizontal' } do |form|
     = form.input :name, required: true, placeholder: t('authenticated.items.edit.name.input_placeholder'), input_html: { class: 'span5' }
-    = form.input :url, required: false, placeholder: t('authenticated.items.edit.url.input_placeholder'), input_html: { class: 'span5' }
+    = form.input :URL, required: false, placeholder: t('authenticated.items.edit.url.input_placeholder'), input_html: { class: 'span5' }
     %br
     .edit-item
       .center
