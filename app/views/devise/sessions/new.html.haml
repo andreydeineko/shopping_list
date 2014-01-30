@@ -2,11 +2,9 @@
 = form_for(resource, :as => resource_name, :url => user_session_path) do |f|
   %div
     = f.label :email
-    %br/
     = f.email_field :email, :autofocus => true
   %div
     = f.label :password
-    %br/
     = f.password_field :password
   - if devise_mapping.rememberable?
     %div
