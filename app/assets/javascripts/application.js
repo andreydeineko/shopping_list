@@ -15,4 +15,4 @@
 //= require jquery-tablesorter
 //= require bootstrap
 //= require the_comments
-//= require authenticated/items
+//= require_tree  ./authenticated

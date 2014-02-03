@@ -8,15 +8,20 @@ body#authenticated-items {
   }
 
   a#new-item-container {
-    float: none;
-    margin: 25px auto;
-    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -87px;
   }
   #new-item {
     display: none;
     float: none;
-    margin: 25px auto;
+    margin: 75px auto;
     background: #e0e4f5;
+
+    input {
+      display: inline-block;
+    }
   }
 
   div.item {
@@ -104,7 +109,7 @@ body#authenticated-items {
       }
     }
     td.narrow {width: 40px; text-align: center; padding-right: 5px;}
-    td.opt {width: 16px; text-align: right; padding-right: 5px;}
+    td.opt {width: 25px; text-align: right; padding-right: 5px;}
 
     th.header {   
       position: center;    
@@ -139,6 +144,7 @@ label.required {
 
   abbr[title], abbr[data-original-title] {
     float: right;
+    title: Required;
   }
 }   
 
@@ -147,14 +153,18 @@ label.required {
   display: block;
 }
 
-#legend {
-  position:absolute;
-  bottom: 0;
-  margin-bottom: 20px;
+.legend-wrapper {
+  margin-top: 40px;
+  position: relative;
+}
 
+#legend {
+  margin: 0px auto;
+  float: right;
+  margin-right: 10px;
   th {
     height: 10px;
-    width: 100px;
+    width: 80px;
   }
 
   td{
@@ -179,8 +189,49 @@ label.required {
     background-color: #bada55;
   }
 }
-/* command shift P - set CSS*/
+#pager {
+  float: left;
+  position: static !important; 
+  margin-top: 40px;
 
+  input, button, textarea, select{
+    width: 30%;
+    font-size: 13px;
+    text-align: center;
+    font-family: Comic Sans, Comic Sans MS, cursive;
+    margin: 0;
+  }
+}
+
+.voters {
+  position: relative;
+
+  #who-voted {
+    display: none;
+    font-family: Comic Sans, Comic Sans MS, cursive;
+
+
+    div {
+      display: inline-block;
+    }
+  }
+
+  &:hover {
+    #who-voted {
+      display: block;
+      margin-top: 1px;
+      background: #fff;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      z-index: 2;
+      text-align: right;
+      white-space: nowrap;
+    }
+  }
+}
+
+/* command shift P - set CSS*/
 
 
 

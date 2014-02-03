@@ -33,8 +33,9 @@
   %br
   Amount: #{@item.amount}
   %br
-  Link:
-  =link_to @item.URL, @item.URL, target: "_blank" unless @item.URL == nil
+  - unless @item.URL.blank?
+    Link: 
+    =link_to @item.URL, @item.URL, target: "_blank"
   %br
 %hr
 - if @item.comments.count == 1

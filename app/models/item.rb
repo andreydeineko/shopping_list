@@ -11,7 +11,7 @@ class Item < ActiveRecord::Base
 
   # Validations
   validates :name, presence: true, uniqueness: true
-  validates :URL, :format => URI::regexp(%w(http https))
+  validates :URL, :format => URI::regexp(%w(http https)), allow_blank: true
   
   scope :recent_first, -> { order('items.created_at DESC') }
 
