@@ -54,10 +54,6 @@ gem 'jbuilder', '~> 1.2'
 # Pagination
 gem 'kaminari'
 
-#Comments
-gem "the_comments", "~> 2.2.0"
-gem 'awesome_nested_set'
-
 #Voting
 gem 'acts_as_votable', '~> 0.8.0'
 

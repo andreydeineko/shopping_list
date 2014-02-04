@@ -14,5 +14,4 @@
 //= require jquery_ujs
 //= require jquery-tablesorter
 //= require bootstrap
-//= require the_comments
 //= require_tree  ./authenticated

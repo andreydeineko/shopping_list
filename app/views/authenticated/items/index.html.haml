@@ -31,19 +31,25 @@
           = link_to(item.name, item)
         %td.narrow 
           = item.amount
-        %td.narrow= link_to(item.comments.count, item)
+        %td.narrow= #link_to(item.comments.count, item)
         %td.narrow.voters
           = item.upvotes.count
           #who-voted
             - item.votes.up.by_type(User).voters.each do |item|
               %div
-                =item.name + ','
+                -if item.name == current_user.name
+                  You,
+                -else
+                  =item.name + ','
         %td.narrow.voters
           = 0 - item.downvotes.size
           #who-voted
             - item.votes.down.by_type(User).voters.each do |item|
               %div
-                =item.name + ','
+                -if item.name == current_user.name
+                  You,
+                -else
+                  =item.name + ','
           
 =render :partial => 'tablesorter_pager'
 

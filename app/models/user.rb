@@ -1,14 +1,4 @@
 class User < ActiveRecord::Base
-  # Comments
-  include TheComments::User
-
-  def comments_moderator? comment
-    id == comment.user_id
-  end
-
-  def comments_admin?
-    true
-  end
 
   def self.find_for_google_oauth2(access_token, signed_in_resource=nil)
     data = access_token.info
