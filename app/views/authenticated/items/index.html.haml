@@ -22,30 +22,28 @@
               %i.icon-pencil
             = link_to item_path(item), id: "destroy-item-#{item.id}", method: 'delete' do
               %i.icon-trash
+          - else
+            = link_to item_like_path(item), method: :get do
+              %i.icon-thumbs-up
+            = link_to item_dislike_path(item), method: :get do
+              %i.icon-thumbs-down
         %td.name
           = link_to(item.name, item)
         %td.narrow 
           = item.amount
         %td.narrow= link_to(item.comments.count, item)
         %td.narrow.voters
-          - if item.user_id != current_user.id
-            #who-voted
-              - item.votes.up.by_type(User).voters.each do |item|
-                %div
-                  =item.name
-            = item.upvotes.size
-            = link_to item_like_path(item), method: :get do
-              %i.icon-thumbs-up
+          = item.upvotes.count
+          #who-voted
+            - item.votes.up.by_type(User).voters.each do |item|
+              %div
+                =item.name + ','
         %td.narrow.voters
-          - if item.user_id != current_user.id
-            #who-voted
-              - item.votes.down.by_type(User).voters.each do |item|
-                %div
-                  =item.name
-            = link_to item_dislike_path(item), method: :get do
-              %i.icon-thumbs-down
-            = 0 - item.downvotes.size
-
+          = 0 - item.downvotes.size
+          #who-voted
+            - item.votes.down.by_type(User).voters.each do |item|
+              %div
+                =item.name + ','
 =render :partial => 'tablesorter_pager'
 
 .legend-wrapper
@@ -77,5 +75,14 @@
     %br
     = form.submit t('common.submit'), class: 'btn btn-success', remote: true, data: { disable_with: t('common.please_wait') }
 
-#who-voted
+
+
+
+
+
+
+
+
+
+
 
