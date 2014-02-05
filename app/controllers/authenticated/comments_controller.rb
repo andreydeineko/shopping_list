@@ -10,9 +10,9 @@ class Authenticated::CommentsController < Authenticated::BaseController
   end
 
   def create
-  	@comment = Comment.new(params[:comment_params])
-	if @comment.persisted?
-	  redirect_to item_path(@comment.item), notice: I18n.t('flash.authenticated.comments.create.notice')
+	@comment = current_user.comments.create(comment_params)
+	if @item.persisted?
+	  redirect_to @comment, notice: I18n.t('flash.authenticated.comments.create.notice')
 	else
 	  redirect_to @item, alert: I18n.t('flash.authenticated.comments.create.alert')
 	end
@@ -28,7 +28,7 @@ class Authenticated::CommentsController < Authenticated::BaseController
 
   def update
     if @comment.update(comment_params)
-      redirect_to item_path(@comment.item), notice: 'Comment was updated'
+      redirect_to @comment, notice: 'Comment was updated'
     else
       render @comment.errors.full_messages.join("<br /")
     end

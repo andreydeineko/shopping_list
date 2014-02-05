@@ -27,4 +27,5 @@ class User < ActiveRecord::Base
 
   devise :omniauthable, :database_authenticatable, :registerable, :recoverable, :rememberable, :trackable, :validatable
   has_many :items
+  has_many :comments
 end

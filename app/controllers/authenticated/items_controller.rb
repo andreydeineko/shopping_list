@@ -4,13 +4,14 @@ class Authenticated::ItemsController < Authenticated::BaseController
   before_filter :find_item!, only: [ :update, :destroy ]
 
   def index
-    # @items = Item.paginate(:page => params[:page], :per_page => 10).recent_first
     @items = Item.all.page(params[:page]).recent_first
     @item  = Item.new
+    @comments = @item.comments.all
   end
 
   def show
     @item = Item.find(params[:id])
+    @comment = @item.comments.new
     #flash[:error] = "Item's not found" and return unless @item
   end
 

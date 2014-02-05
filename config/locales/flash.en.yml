@@ -9,3 +9,11 @@ en:
           notice: 'Item is deleted'
         edit:
           notice: 'Item is successfully edited'
+      comments:
+        create:
+          notice: 'Cooment is successfully added'
+          alert: 'Failed to add comment'
+        delete:
+          notice: 'Comment is deleted'
+        edit:
+          notice: 'Comment is successfully edited'

@@ -6,6 +6,7 @@ class Item < ActiveRecord::Base
 
   # Assosiations
   belongs_to :user
+  has_many :comments
 
   # Validations
   validates :name, presence: true, uniqueness: true

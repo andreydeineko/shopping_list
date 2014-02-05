@@ -45,6 +45,11 @@
 / - else
 /   There are no comments yet. 
 
+= render @item.comments.all  
+/ = render :pratial => '/authenticated/comments/index'
+
+= render :partial => '/authenticated/comments/new'
+
 .center
   %hr
   = link_to 'Back to the list of items', {:action => 'index'}, class: 'important'

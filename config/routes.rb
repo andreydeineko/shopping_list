@@ -7,6 +7,7 @@ Foodlist::Application.routes.draw do
 
   scope module: 'authenticated' do
     resources :items do
+      resources :comments
       get "like", to: "items#like"
       get "dislike", to: "items#dislike"
     end
