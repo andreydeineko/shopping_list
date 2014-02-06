@@ -31,7 +31,7 @@
           = link_to(item.name, item)
         %td.narrow 
           = item.amount
-        %td.narrow= #link_to(item.comments.count, item)
+        %td.narrow= link_to(item.comments.count, item)
         %td.narrow.voters
           = item.upvotes.count
           #who-voted

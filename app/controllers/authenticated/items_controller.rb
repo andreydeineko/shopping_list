@@ -6,12 +6,13 @@ class Authenticated::ItemsController < Authenticated::BaseController
   def index
     @items = Item.all.page(params[:page]).recent_first
     @item  = Item.new
-    @comments = @item.comments.all
   end
 
   def show
     @item = Item.find(params[:id])
-    @comment = @item.comments.new
+    @comments = @item.comments.all
+    @comment = Comment.new(params[:comment_params])
+
     #flash[:error] = "Item's not found" and return unless @item
   end
 
@@ -59,6 +60,10 @@ class Authenticated::ItemsController < Authenticated::BaseController
 
   def item_params
     params.require(:item).permit(:name, :URL, :category, :amount)
+  end
+
+  def comment_params
+    params.require(:comment).permit(:content)
   end
 
   def find_item!

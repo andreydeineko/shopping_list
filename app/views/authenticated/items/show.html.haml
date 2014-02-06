@@ -23,10 +23,6 @@
   %strong
     = @item.user.name
   requested
-  / - if @item.amount.match(/^\d+$/)
-  /   #{@item.amount} #{@item.name}
-  / - else
-  /   #{@item.amount} of #{@item.name}
   = @item.name
   = time_ago_in_words(@item.created_at) 
   ago
@@ -38,15 +34,32 @@
     =link_to @item.URL, @item.URL, target: "_blank"
   %br
 %hr
-/ - if @item.comments.count == 1
-/   There is 1 comment to this item
-/ - elsif @item.comments.count > 0
-/   There are #{@item.comments.count} comments on this item
-/ - else
-/   There are no comments yet. 
+- if @comments.count == 1
+  There is 1 comment to this item
+- elsif @comments.count > 0
+  There are #{@comments.count} comments on this item
+- else
+  There are no comments yet. 
+%hr
+- @comments.each do |comment|
+  = comment.user.name
+  wrote
+  %br
+  = comment.content
 
-= render @item.comments.all  
-/ = render :pratial => '/authenticated/comments/index'
+  .comment-options
+    - if comment.user_id == current_user.id
+      = link_to edit_comment_path(@item, comment), id: "edit-comment-#{comment.id}" do
+        %i.icon-pencil
+      = link_to item_comment_path(@item, comment), id: "destroy-comment-#{comment.id}", method: 'delete' do
+        %i.icon-trash
+    - else
+      = @comment.upvotes.size
+      = link_to comment_like_path(comment), method: :get do
+        %i.icon-thumbs-up
+      = link_to comment_dislike_path(comment), method: :get do
+        %i.icon-thumbs-down
+      = 0 - @comment.downvotes.size
 
 = render :partial => '/authenticated/comments/new'
 
