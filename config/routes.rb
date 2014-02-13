@@ -7,15 +7,14 @@ Foodlist::Application.routes.draw do
 
   scope module: 'authenticated' do
     resources :items do
-      resources :comments
+      resources :comments, except: [:edit, :update] do
+        get "like", to: "comments#like", on: :member
+        get "dislike", to: "comments#dislike", on: :member
+      end 
       get "like", to: "items#like"
       get "dislike", to: "items#dislike"
     end
-    resources :comments do
-      get "like", to: "comments#like"
-      get "dislike", to: "comments#dislike"
-    end
-
+    resources :comments, only: [:update]
   end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

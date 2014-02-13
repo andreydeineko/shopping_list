@@ -1,7 +1,14 @@
 body#authenticated-comments {
-  #new-comment{
-  
-	
+  a#new-comment{
+    position: absolute;
+    top: 0;
+  }
+
+  #new-comment {
+  	display: none;
+    float: none;
+    margin: 75px auto;
+    background: #e0e4f5;
   }
   .comment-options {
 	position: absolute;

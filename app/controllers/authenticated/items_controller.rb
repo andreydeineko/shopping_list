@@ -1,5 +1,5 @@
 class Authenticated::ItemsController < Authenticated::BaseController
-  respond_to :html, :js
+  respond_to :html, :json
 
   before_filter :find_item!, only: [ :update, :destroy ]
 
@@ -10,10 +10,8 @@ class Authenticated::ItemsController < Authenticated::BaseController
 
   def show
     @item = Item.find(params[:id])
-    @comments = @item.comments.all
+    @comments = @item.comments.to_a
     @comment = Comment.new(params[:comment_params])
-
-    #flash[:error] = "Item's not found" and return unless @item
   end
 
   def create
@@ -30,11 +28,13 @@ class Authenticated::ItemsController < Authenticated::BaseController
   end
 
   def update
-    if @item.update(item_params)
-      redirect_to items_path, notice: 'Item was updated'
-    else
-      render @item.errors.full_messages.join("<br /")
-    end
+    respond_to do |format|
+      if @item.update(item_params)
+         format.json { respond_with_bip(@item) }
+      else
+         format.json {  respond_with_bip(@item) }
+      end
+    end  
   end
 
   def destroy
@@ -63,7 +63,7 @@ class Authenticated::ItemsController < Authenticated::BaseController
   end
 
   def comment_params
-    params.require(:comment).permit(:content)
+    params.require(:comment).permit(:content, :parent_id)
   end
 
   def find_item!

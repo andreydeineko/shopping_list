@@ -1,0 +1,5 @@
+#comment-reply
+  = simple_form_for [@item, @comment],  html: { class: 'form-horizontal' } do |form|
+    = form.text_area :content, remote: true, input_html: { class: 'span5' }
+    = form.hidden_field :parent_id, remote: true
+    = form.submit t('common.submit'), class: 'btn btn-success', remote: true, data: { disable_with: t('common.please_wait') }

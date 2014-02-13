@@ -20,17 +20,25 @@ $(document).ready(function() {
     });
 
 //  abbr[title] was "required", but we need it to be "Required"
-    function capitaliseFirstLetter(string)
-        {
-        return string.charAt(0).toUpperCase() + string.slice(1);
-        }
-    $('.simple_form .required abbr').attr('title', capitaliseFirstLetter($('.simple_form .required abbr').attr('title')));
+    // function capitaliseFirstLetter(string)
+    //     {
+    //     return string.charAt(0).toUpperCase() + string.slice(1);
+    //     }
+    // $('.simple_form .required abbr').attr('title', capitaliseFirstLetter($('.simple_form .required abbr').attr('title')));
 
-    $('.simple_form .required abbr').hover(
-        function(){
-            $(this).append($("<span>This field shouldn't be blank</span>"));
-    },  function() {
-            $(this).find("span:last").remove();
+    // $('.simple_form .required abbr').hover(
+    //     function(){
+    //         $(this).append($("<span>This field shouldn't be blank</span>"));
+    // },  function() {
+    //         $(this).find("span:last").remove();
+    // });
+
+
+    $('a.new-comment-container').click(function(event){
+        $(this).next('.comment-reply').slideToggle();
+        event.preventDefault();
+        event.stopPropagation();
     });
 
+    $('.best_in_place').best_in_place(); // in place editing
 });

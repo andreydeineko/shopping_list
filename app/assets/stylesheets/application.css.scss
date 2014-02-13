@@ -65,7 +65,7 @@ pager theme: require jquery-tablesorter/addons/pager/jquery.tablesorter.pager
 
 /* Notifications */
 
-    div#notifications {
+    div#notifications, .purr {
       font-family: Comic Sans, Comic Sans MS, cursive;
       margin-top: 25px;
       position: fixed;

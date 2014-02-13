@@ -1,4 +1,12 @@
 GIT
+  remote: git://github.com/aaronchi/best_in_place.git
+  revision: 1152e2256afd485e66602833fd99d09d60994841
+  specs:
+    best_in_place (2.1.0)
+      jquery-rails
+      rails (>= 3.1)
+
+GIT
   remote: git://github.com/gregbell/active_admin.git
   revision: f381f220219061ee11e65132d2a06bf73007bb8e
   specs:
@@ -82,6 +90,8 @@ GEM
       tzinfo (~> 0.3.37)
     acts_as_votable (0.8.0)
     addressable (2.3.5)
+    ancestry (2.0.0)
+      activerecord (>= 3.0.0)
     arbre (1.0.1)
       activesupport (>= 3.0.0)
     arel (4.0.1)
@@ -348,6 +358,8 @@ PLATFORMS
 DEPENDENCIES
   activeadmin!
   acts_as_votable (~> 0.8.0)
+  ancestry
+  best_in_place!
   better_errors
   binding_of_caller
   bootstrap-editable-rails

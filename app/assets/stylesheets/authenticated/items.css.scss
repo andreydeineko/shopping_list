@@ -7,7 +7,7 @@ body#authenticated-items {
     margin-top: 30px;
   }
 
-  a#new-item-container {
+  a.new-item-container {
     position: absolute;
     top: 0;
     left: 50%;
@@ -21,6 +21,91 @@ body#authenticated-items {
 
     input {
       display: inline-block;
+    }
+  }
+
+  a.new-comment-container{
+    display: inline-block;
+  }
+
+  #comment {
+     font-size: 13px;
+      border-bottom: 1px solid #eee;
+      border: 1px solid #c6cff5;
+      padding-bottom: 10px;
+      line-height: 135%;
+      margin-bottom: 31px;
+      overflow: hidden;
+    }
+
+    .comment-reply {
+          display: none;
+      background: #e0e4f5;
+    border: 1px solid #c6cff5;
+    border-radius: 5px;
+    padding: 10px;
+    
+    p{ margin: 0 0 10px 0; }
+
+    input[type=text]{
+      border: 1px solid #c6cff5;
+      padding: 4px;
+      width: 75%;
+    }
+    textarea{
+      border: 1px solid gray;
+      font-size: 13px;
+      height: 150px;
+      padding: 4px;
+      width: 75%;
+    }
+    .trap{
+      margin: 0; padding: 0;
+      filter: alpha(opacity=0.001);
+      height: 0.1px;
+      opacity: 0.001;
+      overflow: hidden;
+    }
+    }
+
+  #nested-comment {
+    margin-left: 20px;
+     font-size: 12px;
+      border-bottom: 1px solid #eee;
+      border: 1px solid #c6cff5;
+      padding-bottom: 10px;
+      line-height: 135%;
+      margin-bottom: 31px;
+      overflow: hidden;
+  }
+
+  #new-comment-form{
+    background: #e0e4f5;
+    border: 1px solid #c6cff5;
+    border-radius: 5px;
+    padding: 10px;
+    
+    p{ margin: 0 0 10px 0; }
+
+    input[type=text]{
+      border: 1px solid #c6cff5;
+      padding: 4px;
+      width: 75%;
+    }
+    label{ font-size: 18px; color: darkgreen; }
+    textarea{
+      border: 1px solid gray;
+      font-size: 13px;
+      height: 150px;
+      padding: 4px;
+      width: 75%;
+    }
+    .trap{
+      margin: 0; padding: 0;
+      filter: alpha(opacity=0.001);
+      height: 0.1px;
+      opacity: 0.001;
+      overflow: hidden;
     }
   }
 
@@ -76,7 +161,7 @@ body#authenticated-items {
       &:hover { text-decoration: none; }
     }
 
-    .item-options {
+    .item-options, .comment-options {
       position: absolute;
       top: 0;
       right: 0;
@@ -229,6 +314,13 @@ label.required {
       white-space: nowrap;
     }
   }
+}
+.best_in_place:hover, #user_account .do_hover {
+  cursor: pointer;
+  padding-right: 1.5em;
+     background: #e0e4f5;
+    border: 1px solid #c6cff5;
+    border-radius: 5px;
 }
 
 /* command shift P - set CSS*/

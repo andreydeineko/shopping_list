@@ -74,7 +74,12 @@ gem 'activeadmin', github: 'gregbell/active_admin'
 
 #Sorting stuff
 gem 'jquery-tablesorter'
-# gem 'will_paginate'
+
+# tree-style coments displaying
+gem 'ancestry'
+
+# in_place_editing
+gem 'best_in_place', github: 'aaronchi/best_in_place'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
