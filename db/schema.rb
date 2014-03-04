@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140129164721) do
+ActiveRecord::Schema.define(version: 20140206115856) do
 
   create_table "active_admin_comments", force: true do |t|
     t.string   "namespace"
@@ -29,43 +29,16 @@ ActiveRecord::Schema.define(version: 20140129164721) do
   add_index "active_admin_comments", ["resource_type", "resource_id"], name: "index_active_admin_comments_on_resource_type_and_resource_id"
 
   create_table "comments", force: true do |t|
+    t.string   "content"
+    t.integer  "item_id"
     t.integer  "user_id"
-    t.integer  "holder_id"
-    t.integer  "commentable_id"
-    t.string   "commentable_type"
-    t.string   "commentable_url"
-    t.string   "commentable_title"
-    t.string   "commentable_state"
-    t.string   "anchor"
-    t.string   "title"
-    t.string   "contacts"
-    t.text     "raw_content"
-    t.text     "content"
-    t.string   "view_token"
-    t.string   "state",                 default: "draft"
-    t.string   "ip",                    default: "undefined"
-    t.string   "referer",               default: "undefined"
-    t.string   "user_agent",            default: "undefined"
-    t.integer  "tolerance_time"
-    t.boolean  "spam",                  default: false
-    t.integer  "parent_id"
-    t.integer  "lft"
-    t.integer  "rgt"
-    t.integer  "depth",                 default: 0
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "cached_votes_total"
-    t.integer  "cached_votes_score"
-    t.integer  "cached_votes_up"
-    t.integer  "cached_votes_down"
-    t.integer  "cached_weighted_score"
+    t.string   "ancestry"
   end
 
-  add_index "comments", ["cached_votes_down"], name: "index_comments_on_cached_votes_down"
-  add_index "comments", ["cached_votes_score"], name: "index_comments_on_cached_votes_score"
-  add_index "comments", ["cached_votes_total"], name: "index_comments_on_cached_votes_total"
-  add_index "comments", ["cached_votes_up"], name: "index_comments_on_cached_votes_up"
-  add_index "comments", ["cached_weighted_score"], name: "index_comments_on_cached_weighted_score"
+  add_index "comments", ["item_id"], name: "index_comments_on_item_id"
+  add_index "comments", ["user_id"], name: "index_comments_on_user_id"
 
   create_table "items", force: true do |t|
     t.string   "name"

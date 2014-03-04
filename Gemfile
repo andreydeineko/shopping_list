@@ -54,10 +54,6 @@ gem 'jbuilder', '~> 1.2'
 # Pagination
 gem 'kaminari'
 
-#Comments
-gem "the_comments", "~> 2.2.0"
-gem 'awesome_nested_set'
-
 #Voting
 gem 'acts_as_votable', '~> 0.8.0'
 
@@ -78,7 +74,12 @@ gem 'activeadmin', github: 'gregbell/active_admin'
 
 #Sorting stuff
 gem 'jquery-tablesorter'
-# gem 'will_paginate'
+
+# tree-style coments displaying
+gem 'ancestry'
+
+# in_place_editing
+gem 'best_in_place', github: 'aaronchi/best_in_place'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.

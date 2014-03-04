@@ -1,0 +1,13 @@
+export CLIENT_ID="578631763686.apps.googleusercontent.com"
+export CLIENT_EMAIL="578631763686@developer.gserviceaccount.com"
+
+# GMAIL credentials for web appication
+export GMAIL_CLIENT_ID="578631763686-t5ucjlaj2d5um54rq33qgrs76i4kl98n.apps.googleusercontent.com"
+export GMAIL_CLIENT_SECRET="p-ARY93GFDoOIsSTlsn4sPPo"
+
+# FACEBOOK credentials for web appication
+export FB_APP_ID="786747841355368"
+export FB_APP_SECRET="bdcc17a418e9c98be00982324d99d8c1"
+
+
+# heroku config:set CLIENT_ID=578631763686.apps.googleusercontent.com

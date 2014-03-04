@@ -48,7 +48,6 @@ pager theme: require jquery-tablesorter/addons/pager/jquery.tablesorter.pager
 @import 'common/classes';
 
 @import "authenticated/items";
-@import "authenticated/the_comments";
 
 
 // Application styles END
@@ -66,7 +65,7 @@ pager theme: require jquery-tablesorter/addons/pager/jquery.tablesorter.pager
 
 /* Notifications */
 
-    div#notifications {
+    div#notifications, .purr {
       font-family: Comic Sans, Comic Sans MS, cursive;
       margin-top: 25px;
       position: fixed;

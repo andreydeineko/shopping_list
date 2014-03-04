@@ -4,49 +4,97 @@
     %u
       = current_user.name
 #item-name
-  = @item.name
-/ .item-options
-/   = @item.name do |item|
-/   - if item.user_id == current_user.id
-/     = link_to edit_item_path(item), id: "edit-item-#{item.id}" do
-/       %i.icon-pencil
-/     = link_to item_path(item), id: "destroy-item-#{item.id}", method: 'delete' do
-/       %i.icon-trash
-/   - else
-/     = item.upvotes.size
-/     = link_to item_like_path(item), method: :get do
-/       %i.icon-thumbs-up
-/     = link_to item_dislike_path(item), method: :get do
-/       %i.icon-thumbs-down
-/     = 0 - item.downvotes.size
+  = best_in_place_if @item.user == current_user, @item, :name
+
 #request-info
   %strong
     = @item.user.name
-  requested
-  / - if @item.amount.match(/^\d+$/)
-  /   #{@item.amount} #{@item.name}
-  / - else
-  /   #{@item.amount} of #{@item.name}
-  = @item.name
+  requested this item
   = time_ago_in_words(@item.created_at) 
   ago
   %br
-  Amount: #{@item.amount}
+  Amount: 
+  = best_in_place_if @item.user == current_user, @item, :amount
   %br
   - unless @item.URL.blank?
     Link: 
     =link_to @item.URL, @item.URL, target: "_blank"
   %br
 %hr
-- if @item.comments.count == 1
+- if @comments.count == 1
   There is 1 comment to this item
-- elsif @item.comments.count > 0
-  There are #{@item.comments.count} comments on this item
+- elsif @comments.count > 0
+  There are #{@comments.count} comments on this item
 - else
   There are no comments yet. 
-
 %hr
-= render partial: 'the_comments/tree', locals: { commentable: @item, comments_tree: @comments }
+  - @comments.each do |comment|
+    -if comment.is_root?
+      %strong
+        = comment.user.name
+      wrote:
+      %br
+      #root-comment
+        = best_in_place_if comment.user == current_user, comment, :content, type: :textarea
+      .comment-options
+        - if comment.user_id == current_user.id #only author can edit and delete comment
+          - if comment.children.count == 0 #can delete coment, if noone replied
+            = link_to item_comment_path(@item, comment), id: "destroy-comment-#{comment.id}", method: 'delete' do
+              %i.icon-trash
+        - else
+          = comment.upvotes.size
+          = link_to like_item_comment_path(@item, comment), method: :get do
+            %i.icon-thumbs-up
+          = link_to dislike_item_comment_path(@item, comment), method: :get do
+            %i.icon-thumbs-down
+          = 0 - comment.downvotes.size
+      
+        = link_to nil, class: 'new-comment-container'  do
+          = icon_label 'icon-reply'
+        .comment-reply
+          = simple_form_for [@item, @comment],  html: { class: 'form-horizontal' } do |form|
+            = form.text_area :content, remote: true
+            = form.hidden_field :parent_id, remote: true, value: comment.id
+            %br
+            %br
+            = form.submit t('common.submit'), class: 'btn btn-success', remote: true, data: { disable_with: t('common.please_wait') }
+        -comment.children.each do |nested_comment| #display all comment's children
+          #nested-comment
+            %p
+            %strong
+              = nested_comment.user.name
+            wrote:
+            %br
+            #nested-comment-content
+              = best_in_place_if nested_comment.user == current_user, nested_comment, :content, type: :textarea
+            .comment-options
+              - if nested_comment.user_id == current_user.id
+                - if comment.children.count == 0 #can delete comment, if noone replied
+                  = link_to item_comment_path(@item, nested_comment), id: "destroy-comment-#{comment.id}", method: 'delete' do
+                    %i.icon-trash
+                = link_to item_comment_path(@item, nested_comment), id: "destroy-comment-#{comment.id}", method: 'delete' do
+                  %i.icon-trash
+              - else
+                = nested_comment.upvotes.size
+                = link_to like_item_comment_path(@item, nested_comment), method: :get do
+                  %i.icon-thumbs-up
+                = link_to dislike_item_comment_path(@item, nested_comment), method: :get do
+                  %i.icon-thumbs-down
+                = 0 - nested_comment.downvotes.size
+
+              = link_to nil, class: 'new-comment-container'  do
+                = icon_label 'icon-reply'
+              .comment-reply
+                = simple_form_for [@item, @comment],  html: { class: 'form-horizontal' } do |form|
+                  = form.text_area :content, remote: true
+                  = form.hidden_field :parent_id, remote: true, value: comment.id
+                  %br
+                  %br
+                  = form.submit t('common.submit'), class: 'btn btn-success', remote: true, data: { disable_with: t('common.please_wait') }
+  
+%hr
+= render :partial => '/authenticated/comments/new'
+
 .center
   %hr
   = link_to 'Back to the list of items', {:action => 'index'}, class: 'important'

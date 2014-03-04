@@ -1,0 +1,10 @@
+#new-comment-form
+  %label Comment
+  = simple_form_for [@item, @comment], html: { class: 'form-horizontal' } do |form|
+    = form.text_area :content
+    = form.hidden_field :parent_id
+    %br
+    %br
+    = form.submit t('common.submit'), class: 'btn btn-success', data: { disable_with: t('common.please_wait') }
+
+    / make form at the bottom
