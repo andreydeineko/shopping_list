@@ -1,5 +1,4 @@
 body#authenticated-items {
-  font-family: Georgia;
 
   items-container {
     display: inline-block;
@@ -146,6 +145,7 @@ body#authenticated-items {
     padding: 10px;
   }
 
+
   #items {
     padding-top: 5px;
     width: 100%;
@@ -246,6 +246,7 @@ label.required {
 }
 
 #legend {
+  font-family: MerriweatherSans-BoldItalic;
   margin: 0px auto;
   float: right;
   margin-right: 10px;
@@ -257,7 +258,6 @@ label.required {
   td{
     font-size: 16px;
     text-align: center;
-    font-family: Comic Sans, Comic Sans MS, cursive;
   }
 
   th.food {
@@ -285,7 +285,6 @@ label.required {
     width: 34%;
     font-size: 13px;
     text-align: center;
-    font-family: Comic Sans, Comic Sans MS, cursive;
     margin: 0;
   }
 }
@@ -295,7 +294,6 @@ label.required {
 
   #who-voted {
     display: none;
-    font-family: Comic Sans, Comic Sans MS, cursive;
 
 
     div {

@@ -12,6 +12,7 @@
   requested this item
   = time_ago_in_words(@item.created_at) 
   ago
+  (#{@item.created_at.strftime("%d %b %y")})
   %br
   Amount: 
   = best_in_place_if @item.user == current_user, @item, :amount
@@ -32,13 +33,13 @@
     -if comment.is_root?
       %strong
         = comment.user.name
-      wrote:
+      wrote on #{comment.created_at.strftime("%d %b %y")}:
       %br
       #root-comment
         = best_in_place_if comment.user == current_user, comment, :content, type: :textarea
       .comment-options
         - if comment.user_id == current_user.id #only author can edit and delete comment
-          - if comment.children.count == 0 #can delete coment, if noone replied
+          - if comment.children.count == 0 #can delete comment only if noone replied
             = link_to item_comment_path(@item, comment), id: "destroy-comment-#{comment.id}", method: 'delete' do
               %i.icon-trash
         - else
@@ -63,7 +64,7 @@
             %p
             %strong
               = nested_comment.user.name
-            wrote:
+            wrote on #{comment.created_at.strftime("%d %b %y")}:
             %br
             #nested-comment-content
               = best_in_place_if nested_comment.user == current_user, nested_comment, :content, type: :textarea

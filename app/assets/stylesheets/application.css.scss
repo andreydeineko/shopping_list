@@ -47,12 +47,14 @@ pager theme: require jquery-tablesorter/addons/pager/jquery.tablesorter.pager
 @import 'common/variables';
 @import 'common/classes';
 
-@import "authenticated/items";
+@import "items";
+@import "font";
 
 
 // Application styles END
 
    #header {
+
     div.navbar-inner { @include border-radius(0); }
 
      margin-bottom: 0;
@@ -61,12 +63,13 @@ pager theme: require jquery-tablesorter/addons/pager/jquery.tablesorter.pager
     div#main-content {
     margin-top: 50px;
     font-family: Georgia;
+
     }
 
 /* Notifications */
 
     div#notifications, .purr {
-      font-family: Comic Sans, Comic Sans MS, cursive;
+      font-family: MerriweatherSans-BoldItalic;
       margin-top: 25px;
       position: fixed;
       left: 75%;

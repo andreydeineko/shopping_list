@@ -11,7 +11,7 @@ en:
           notice: 'Item is successfully edited'
       comments:
         create:
-          notice: 'Cooment is successfully added'
+          notice: 'Comment is successfully added'
           alert: 'Failed to add comment'
         delete:
           notice: 'Comment is deleted'
