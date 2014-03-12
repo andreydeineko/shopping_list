@@ -3,7 +3,7 @@
   %div
     = f.error_notification
   %div  
-    = f.email_field :email, :required => true, :autofocus => true
+    = f.input :email, :required => true, :autofocus => true
   %div= f.submit "Send me reset password instructions", class: 'btn btn-success'
 = render "devise/shared/links"
 
