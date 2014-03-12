@@ -9,5 +9,6 @@ export GMAIL_CLIENT_SECRET="p-ARY93GFDoOIsSTlsn4sPPo"
 export FB_APP_ID="786747841355368"
 export FB_APP_SECRET="bdcc17a418e9c98be00982324d99d8c1"
 
+heroku config:add GMAIL_SMTP_USER=username@gmail.com
+heroku config:add GMAIL_SMTP_PASSWORD=password
 
-# heroku config:set CLIENT_ID=578631763686.apps.googleusercontent.com

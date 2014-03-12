@@ -82,5 +82,22 @@ Foodlist::Application.configure do
 
   config.assets.precompile += %w( active_admin.js application.css application.js  active_admin.css active_admin/print.css active_admin.js )
   
+    #Making devise authentication recovery password work
+
+  config.action_mailer.default_url_options = { host: 'http://shopplist-staging.herokuapp.com' }
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.perform_deliveries = true
+  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.default charset: "utf-8"
+
+  ActionMailer::Base.smtp_settings = {
+    :address => "smtp.gmail.com",
+    :port => 587,
+    :authentication => :plain,
+    :domain => ENV['GMAIL_SMTP_USER'],
+    :user_name => ENV['GMAIL_SMTP_USER'],
+    :password => ENV['GMAIL_SMTP_PASSWORD'],
+  }
+
 
 end

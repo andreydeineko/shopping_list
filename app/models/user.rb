@@ -25,7 +25,13 @@ class User < ActiveRecord::Base
   # permit duplicates entries of a same voter
   #@hat.vote voter: @user, :duplicate => true
 
+  # Validations
+  validates :name, presence: true, uniqueness: true
+   validates :email, presence: true, uniqueness: true
+
   devise :omniauthable, :database_authenticatable, :registerable, :recoverable, :rememberable, :trackable, :validatable
+
+  # Assosiations
   has_many :items
   has_many :comments
 end
