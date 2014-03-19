@@ -1,4 +1,4 @@
-/*
+P/*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
  *
@@ -41,7 +41,7 @@ pager theme: require jquery-tablesorter/addons/pager/jquery.tablesorter.pager
 //@import "bootstrap-responsive";
 @import "bootswatch/cerulean/bootswatch";
 
-// Application styles
+/*Application styles*/
 @import 'font-awesome';
 
 @import 'common/variables';
@@ -51,7 +51,7 @@ pager theme: require jquery-tablesorter/addons/pager/jquery.tablesorter.pager
 @import "font";
 
 
-// Application styles END
+/*Application styles END*/
 
    #header {
 
