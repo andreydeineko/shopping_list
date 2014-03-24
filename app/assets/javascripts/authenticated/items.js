@@ -9,7 +9,7 @@ $(document).ready(function() {
         $('#items')
             .trigger('saveSortReset') // clear saved sort
             .trigger('sortReset');    // reset current table sort
-        return true;
+        // return true;
     });
 
 
