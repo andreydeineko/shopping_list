@@ -3,9 +3,13 @@
   = f.error_notification
   = f.input :reset_password_token, :as => :hidden
   = f.full_error :reset_password_token
-  .form-inputs
-    = f.input :password, :label => "New password", :required => true, :autofocus => true
-    = f.input :password_confirmation, :label => "Confirm your new password", :required => true
-  .form-actions
-    = f.button :submit, "Change my password"
+  %div
+    = f.password_field :password, :required => true, :autofocus => true, :placeholder => "New password"
+    = f.password_field :password, :required => true, :autofocus => true, :placeholder => "Confirm your new password"
+  %div= f.submit "Change my password", class: 'btn btn-success', data: { disable_with: t('common.please_wait') }
 = render "devise/shared/links"
+
+/ %div
+/     = f.input :password, :label => "New password", :required => true, :autofocus => true
+/     = f.input :password_confirmation, :label => "Confirm your new password", :required => true
+/   %div= f.submit "Change my password", class: 'btn btn-success', data: { disable_with: t('common.please_wait') }

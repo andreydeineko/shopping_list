@@ -13,7 +13,7 @@ describe 'Items' do
 
   	  click_link I18n.t('authenticated.items.add_item')
   	  fill_in 'item_name', with: item.name
-  	  fill_in 'item_url', with: item.url
+  	  fill_in 'item_URL', with: item.URL
   	  click_button I18n.t('common.submit')
 
   	  expect(page).to have_content item.name

@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
     $("#items")
-        .tablesorter({widthFixed: true, widgets: ['zebra', 'saveSort', 'savePagerSize']}) 
+        .tablesorter({widthFixed: true, widgets: ['zebra', 'saveSort', 'savePagerSize']})
         .tablesorterPager({container: $("#pager"), savePages: true }); 
 
 //  function to save table's sorted state 
