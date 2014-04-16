@@ -12,5 +12,6 @@
         = select_tag "category", options_for_select([ ["food", { class: 'label label-success' }], ["office", { class: 'label label-important' }], ["bathroom", { class: 'label label-info' }], ["other", { class: 'label label-inverse' }] ])
       %br
       = form.input :amount, required: true
+      %br
     = form.submit t('authenticated.items.item.edit'), class: 'btn btn-success', data: { disable_with: t('common.please_wait') }
     %br

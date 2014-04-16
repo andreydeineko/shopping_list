@@ -27,7 +27,7 @@ en:
 
   auth:
     sign_in: 'Sign in'
-    sign_in_gmail: 'Sign in with Gmail'
+    sign_in_google: 'Sign in with Google'
     sign_in_facebook: 'Sign in with Facebook'
     sign_up: 'Sign up'
     sign_out: 'Sign out'

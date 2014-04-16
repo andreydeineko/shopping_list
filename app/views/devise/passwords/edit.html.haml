@@ -5,6 +5,7 @@
   = f.full_error :reset_password_token
   %div
     = f.password_field :password, :required => true, :autofocus => true, :placeholder => "New password"
+  %br
     = f.password_field :password, :required => true, :autofocus => true, :placeholder => "Confirm your new password"
   %div= f.submit "Change my password", class: 'btn btn-success', data: { disable_with: t('common.please_wait') }
 = render "devise/shared/links"
