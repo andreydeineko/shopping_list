@@ -1,6 +1,6 @@
 # GMAIL credentials for web appication
 export CLIENT_ID="578631763686.apps.googleusercontent.com"
-export CLIENT_EMAIL="578631763686@developer.gserviceaccount.com"
+export CLIENT_EMAIL="578631763686-gvtgb3u4bvhv9rvjpk2cd4fqmmk91h1s@developer.gserviceaccount.com"
 
 export GMAIL_CLIENT_ID="578631763686-gvtgb3u4bvhv9rvjpk2cd4fqmmk91h1s.apps.googleusercontent.com"
 export GMAIL_CLIENT_SECRET="QYVkdz9Kr-5Hm4SSaJxHqoUN"
@@ -11,3 +11,4 @@ export FB_APP_SECRET="bdcc17a418e9c98be00982324d99d8c1"
 
 heroku config:add GMAIL_SMTP_USER=username@gmail.com
 heroku config:add GMAIL_SMTP_PASSWORD=password
+
