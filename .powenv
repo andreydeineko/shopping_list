@@ -11,11 +11,3 @@ export FB_APP_SECRET="bdcc17a418e9c98be00982324d99d8c1"
 
 heroku config:add GMAIL_SMTP_USER=username@gmail.com
 heroku config:add GMAIL_SMTP_PASSWORD=password
-
-Client ID	578631763686-t5ucjlaj2d5um54rq33qgrs76i4kl98n.apps.googleusercontent.com
-Email address	578631763686-t5ucjlaj2d5um54rq33qgrs76i4kl98n@developer.gserviceaccount.com
-Client secret	p-ARY93GFDoOIsSTlsn4sPPo
-Redirect URIs	
-http://shopplist.herokuapp.com/users/auth/google_oauth2/callback
-Javascript Origins	
-http://shopplist.herokuapp.com
