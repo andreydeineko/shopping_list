@@ -2,7 +2,9 @@
 = simple_form_for(resource, :as => resource_name, :url => password_path(resource_name), :html => { :method => :post }) do |f|
   = f.error_notification #{}"No user with such email found"
   We won't send you reset password instructions if your email address is not in our database
+  %br
+  %br
   %div
     = f.email_field :email, :required => true, :autofocus => true, :placeholder => "Type your email here"
-  %div= f.submit "Send me instructions", class: 'btn btn-success', data: { disable_with: t('common.please_wait') }
+  %div= f.submit "Send me reset password email", class: 'btn btn-success', data: { disable_with: t('common.please_wait') }
 = render "devise/shared/links"
