@@ -1,17 +1,15 @@
-.center
+.center.span6
   %h2 Editing item
-.center
-#edit-item.well.span5
-  = simple_form_for @item, html: { id: 'edit-item', class: 'form-horizontal' } do |form|
-    = form.input :name, required: true, placeholder: t('authenticated.items.edit.name.input_placeholder'), input_html: { class: 'span5' }
-    = form.input :URL, required: false, placeholder: t('authenticated.items.edit.url.input_placeholder'), input_html: { class: 'span5' }
-    %br
-    .edit-item
-      .center
-        Choose the category
-        = select_tag "category", options_for_select([ ["food", { class: 'label label-success' }], ["office", { class: 'label label-important' }], ["bathroom", { class: 'label label-info' }], ["other", { class: 'label label-inverse' }] ])
+  #edit-item.well.span5
+    = simple_form_for @item, html: { id: 'edit-item', class: 'form-horizontal' } do |form|
+      = form.input :name, required: true, placeholder: t('authenticated.items.edit.name.input_placeholder'), input_html: { class: 'span5' }
+      = form.input :URL, required: false, placeholder: t('authenticated.items.edit.url.input_placeholder'), input_html: { class: 'span5' }
       %br
-      = form.input :amount, required: true
-      %br
-    = form.submit t('authenticated.items.item.edit'), class: 'btn btn-success', data: { disable_with: t('common.please_wait') }
-    %br
+      .edit-item
+        .center
+          Choose the category
+          = select_tag "category", options_for_select([ ["food", { class: 'label label-success' }], ["office", { class: 'label label-important' }], ["bathroom", { class: 'label label-info' }], ["other", { class: 'label label-inverse' }] ])
+        %br
+        = form.input :amount, required: true
+        %br
+      = form.submit t('authenticated.items.item.edit'), class: 'btn btn-success', data: { disable_with: t('common.please_wait') }
