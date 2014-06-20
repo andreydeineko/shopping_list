@@ -34,4 +34,6 @@ class User < ActiveRecord::Base
   # Assosiations
   has_many :items
   has_many :comments
+
+  scope :admins, -> { where(admin: true) }
 end

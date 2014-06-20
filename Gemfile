@@ -92,6 +92,10 @@ group :development do
   gem 'sqlite3'
   gem "better_errors"
   gem "binding_of_caller"
+  # Guard automation gems
+  gem 'guard-rspec', require: false
+  gem 'guard-livereload', require: false
+  gem 'guard-bundler', require: false
 end
 
 group :test do

@@ -1,4 +1,7 @@
 class Item < ActiveRecord::Base
+
+  after_create :send_notification
+
   CATEGORIES = ["food", "office", "bathroom", "other"]
 
   #Voting
@@ -14,8 +17,11 @@ class Item < ActiveRecord::Base
   
   scope :recent_first, -> { order('items.created_at DESC') }
 
+  def send_notification
+    NotificationMailer.new_item(self).deliver
+  end
+
   def self.highest_voted
     self.order("items.cached_votes_score DESC")
   end
-  # Item.highest_voted
 end

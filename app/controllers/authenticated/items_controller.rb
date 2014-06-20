@@ -30,16 +30,16 @@ class Authenticated::ItemsController < Authenticated::BaseController
   def update
     respond_to do |format|
       if @item.update(item_params)
-         format.json { respond_with_bip(@item) }
+        format.json { respond_with_bip(@item) }
       else
-         format.json {  respond_with_bip(@item) }
+        format.json {  respond_with_bip(@item) }
       end
-    end  
+    end
   end
 
   def destroy
     @item.destroy
-    redirect_to items_path, notice: 'Item was deleted'
+    redirect_to items_path, notice: I18n.t('flash.authenticated.items.delete')
   end
 
   # Voting
