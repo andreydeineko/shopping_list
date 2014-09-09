@@ -1,1 +1,1 @@
-shopplist.heroku.com
+http://shopplist.herokuapp.com
